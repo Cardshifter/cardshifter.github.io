@@ -1,4 +1,0 @@
-Cardshifter-web
-===============
-
-Cardshifter Website
