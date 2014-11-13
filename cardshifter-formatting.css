@@ -50,15 +50,24 @@ h1, h2, h3, blockquote {
     font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-p, span, blockquote, table {
+p, span, table {
     font-size: 1.2em;
     font-weight: normal;
 }
 
 pre {
     font-family: Monaco, Consolas, Courier New;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: normal;
+}
+
+code {
+    font-family: Monaco, Consolas, Courier New;
+    font-weight: normal;
+}
+
+blockquote {
+    font-size: 1.4em;
 }
 
 /* FORMATTING FOR TABLES */
