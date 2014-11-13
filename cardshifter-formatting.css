@@ -5,7 +5,7 @@ body {
 
 /* FORMATTING FOR TOP NAV BAR */
 
-a.top-link {
+a.CSh-top-link {
     font-family: Georgia, Times, "Times New Roman", serif;
     color: #FFFFFF;
     font-size: 2em;
@@ -25,21 +25,21 @@ h5 {
     font-weight: normal;
 }
 
-a.nav-link { 
+a.CSh-nav-link { 
     color: #000000;
 }
 
-div.nav-background {
+div.CSh-nav-background {
     background-color: #EEEEEE; 
 }
 
-div.nav-padding {
+div.CSh-nav-padding {
     padding-top: 50px;
 }
 
 /* FORMATTING FOR PAGE BODY */
 
-div.body-padding {
+div.CSh-body-padding {
     padding-left: 15px;
 }
 
