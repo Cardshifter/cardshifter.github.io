@@ -1,0 +1,97 @@
+body {
+    font-size: 120%;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* FORMATTING FOR TOP NAV BAR */
+
+a.csh-top-link {
+    font-family: Georgia, Times, "Times New Roman", serif;
+    color: #FFFFFF;
+    font-size: 2em;
+}
+
+/* FORMATTIN FOR LEFT SIDE NAV MENU */
+
+/* h4 and h5 are used for left nav bar links */
+
+h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+a.csh-nav-link { 
+    color: #000000;
+}
+
+div.csh-nav-background {
+    background-color: #EEEEEE; 
+}
+
+div.csh-nav-padding {
+    padding-top: 50px;
+}
+
+/* FORMATTING FOR PAGE BODY */
+
+div.csh-body-padding {
+    padding-left: 15px;
+}
+
+
+/* FORMATTING FOR COMMON PAGE ELEMENTS */
+
+h1, h2, h3, blockquote {
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+p, span, table {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+pre {
+    font-family: Monaco, Consolas, Courier New;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+code {
+    font-family: Monaco, Consolas, Courier New;
+    font-weight: normal;
+}
+
+blockquote {
+    font-size: 1.4em;
+}
+
+/* FORMATTING FOR TABLES */
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th {
+    background-color: #EEEEEE;
+    color: #000000;
+}
+
+/* FORMATTING FOR BUTTONS, ALERTS, ETC. */
+
+a.csh-button-formatting {
+    font-size: 1.2em;
+    font-weight: normal;
+}
+div.csh-alert-formatting {
+    font-size: 1.2em;
+}
