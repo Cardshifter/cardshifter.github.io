@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="" lang="en"><!-- MAKE NO CHANGE TO ANYTHING IN THE <head> </head> SECTION --><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -36,11 +36,12 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand csh-top-link" href="index.html">Cardshifter</a>
-          
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-              <li><img src="images/logos/Twitter_logo_blue.png" style="height: 1.5%; width: 1.5%;"><a href="https://twitter.com/Cardshifter" class="navbar-brand csh-top-link" style="font-size: 1.2em; margin-top: 2px;">@Cardshifter</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
     </nav>
@@ -68,37 +69,60 @@
             <h5><a class="csh-nav-link" href="http://chat.stackexchange.com/rooms/16134/tcg-creation" target="_blank">Chat room</a></h5>
           </ul>
         </div>
+        <div class="col-sm-9 col-md-10 main"><br>
+          <h1 class="page-header">The Cardshifter Project.</h1>
 
 <!-- END OF NAVIGATION MENUS -->
-
-        <div class="col-sm-9 col-md-10 main"><br>
-          <h1 class="page-header">Welcome to Cardshifter.</h1>       
-        <div>        
+            
+      <div>        
         
 <!-- PAGE CONTENT STARTS HERE -->
         
       <div class="default-template csh-body">
-        <p>Cardshifter is an open-source Trading Card Game <i>(TCG)</i> project which began in August 2014. It is being developed by a team of dedicated software programmers, web developers and designers. The project focuses on several overarching ideas.</p>
+        <p>Cardshifter is an open-source Trading Card Game <i>(TCG)</i> project which began in August 2014. It is being developed by a team of dedicated software programmers, web developers and designers. This page will go over some of the tools and technologies that we employ.</p>
+        <h2>Git, Github</h2>
+        <p>The <a href="https://github.com/Cardshifter" target="blank">Cardshifter Github repository</a> is the central hub where all the code and files are stored. It is a vastly valuable tool in facilitating teamwork, version control, and just generally keeping things organized. Should you decide to become a contributor to the Cardshifter project as a programmer, this is where your journey will begin.</p>
+        <h3>Github links:</h3>
+          <span>
+            <ul>
+              <li><a href="https://github.com/Cardshifter/Cardshifter" target="_blank">Java repository</a></li>
+                <ul>
+                  <li><a href="https://github.com/Cardshifter/Cardshifter/wiki" target="_blank">Wiki</a></li>
+                  <li><a href="https://github.com/Cardshifter/Cardshifter/issues" target="_blank">Issues</a></li>
+                  <li><a href="https://github.com/Cardshifter/Cardshifter/network" target="_blank">Network graph</a></li>
+                  <li><a href="https://waffle.io/#!/Cardshifter/Cardshifter" target="_blank">Waffle issue tracker</a></li>
+                </ul>
+              </li>
+              <li><a href="https://github.com/Cardshifter/cardshifter.github.io" target="_blank">Website repository</a></li>
+              <li><a href="https://github.com/Cardshifter/Graphics" target="_blank">Graphics repository</a></li>
+            </ul>
+          </span>
 
-        <h2>Portability.</h2>
-        <p>The game client and server are being developed using the latest Java 8 and JavaFX and libGDX technology, which will ensure that the game will be highly portable to computers, tablets and mobile devices, all the while being lightweight enough not to be a burden on data plans. It will also employ vector graphics technology and will feature rich game statistics for players.</p>
-        <div style="padding-top: 5px;">
-          <a href="project.html" class="btn btn-primary csh-button">Learn more »</a>
-          <a href="contributors.html" class="btn btn-default csh-button">Meet the team »</a>
-        </div>
+        <h2>Java 8, JavaFX, libGDX</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+        <h3>Java links:</h3>
+          <span>
+            <ul>
+              <li><a href="#" target="_blank">Lorem ipsum</a></li>
+                <ul>
+                  <li><a href="#" target="_blank">Dolor si amet</a></li>
+                  <li><a href="#" target="_blank">Consectetuer</a></li>
+                  <li><a href="#" target="_blank">Aenean commodo</a></li>
+                  <li><a href="#" target="_blank">Ligula</a></li>
+                </ul>
+              </li>
+              <li><a href="#" target="_blank">Eget dolor</a></li>
+              <li><a href="#" target="_blank">Aenean massa</a></li>
+            </ul>
+          </span>
+        <h2>Bootstrap CSS</h2>
+        <p>This website is built in part using the <a href="http://getbootstrap.com/css/" target="_blank">Bootstrap CSS</a> library, which makes it easy and fast to make professional-looking websites. Special thanks to <a href="https://www.maxcdn.com/" target="_blank">MaxCDN</a> for hosting the Bootstrap CSS library used for this site. If you wish to use it for your site, you may add the following into the <code>&lt;head&gt;</code> of your website:
 
-        <h2>Moddability.</h2>
-        <p>The game will be highly moddable, in that it will allow you not only to play our game, but also make and play <i>your game</i> online with your friends on the Cardshifter servers. At the surface level, you will be able to create your own set of cards and your own game rules, with minimal to no programming knowledge. At the advanced level, should you want to use our platform and fork to make your own, that will also be possible.</p>
-        <div style="padding-top: 5px;">
-          <a href="mods.html" class="btn btn-primary csh-button">Learn more »</a>
-        </div>
+        <pre>&lt;!-- Bootstrap core CSS --&gt;<br>&lt;link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"&gt;</pre>
 
-        <h2>Expandability.</h2>
-        <p>As the game is being developed, the team is making sure that the code is clear, modular, and most importantly, well documented. As such, a new member of the team can comfortably join in the programming work (we call it "fun") and explore the code base. Are you a programmer?</p>
-        <div style="padding-top: 5px;">
-          <a href="https://github.com/Cardshifter/Cardshifter" class="btn btn-primary csh-button" target="_blank">Explore the code »</a>
-          <a href="contribute.html" class="btn btn-success csh-button" target="_blank">Join in the fun! »</a>
-        </div>
+        <h2>PostgreSQL</h2>
+        <p>Cardshifter will be using a normalized <a href="http://www.postgresql.org/" target="_blank">PostgreSQL</a> relational database in order to gather a plethora of game statistics which will be displayed both in-game and available on the web. That way, players can keep track of their performance in each mod, and with each version of their decks, to see how they rank against other players.</p>
+
 <!-- END PAGE CONTENT -->          
 
       </div>

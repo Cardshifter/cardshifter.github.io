@@ -11,7 +11,7 @@ a.csh-top-link {
     font-size: 2em;
 }
 
-/* FORMATTIN FOR LEFT SIDE NAV MENU */
+/* FORMATTING FOR LEFT SIDE NAV MENU */
 
 /* h4 and h5 are used for left nav bar links */
 
@@ -21,8 +21,9 @@ h4 {
 }
 
 h5 {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: normal;
+    padding-left: 15px;
 }
 
 a.csh-nav-link { 
@@ -39,7 +40,7 @@ div.csh-nav-padding {
 
 /* FORMATTING FOR PAGE BODY */
 
-div.csh-body-padding {
+div.csh-body {
     padding-left: 15px;
 }
 
@@ -48,6 +49,10 @@ div.csh-body-padding {
 
 h1, h2, h3, blockquote {
     font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+    padding-top: 15px;
 }
 
 p, span, table {
@@ -64,10 +69,16 @@ pre {
 code {
     font-family: Monaco, Consolas, Courier New;
     font-weight: normal;
+    background-color: #FFFFFF;
 }
 
 blockquote {
     font-size: 1.4em;
+}
+
+div.copyright {
+    padding-top: 20px;
+    padding-left: 15px;
 }
 
 /* FORMATTING FOR TABLES */
@@ -88,10 +99,7 @@ th {
 
 /* FORMATTING FOR BUTTONS, ALERTS, ETC. */
 
-a.csh-button-formatting {
-    font-size: 1.2em;
+.csh-button {
+    font-size: 1.1em;
     font-weight: normal;
-}
-div.csh-alert-formatting {
-    font-size: 1.2em;
 }

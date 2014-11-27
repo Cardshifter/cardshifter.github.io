@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html class="" lang="en"><!-- MAKE NO CHANGE TO ANYTHING IN THE <head> </head> SECTION --><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
@@ -36,11 +36,12 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand csh-top-link" href="index.html">Cardshifter</a>
-          
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-              <li><img src="images/logos/Twitter_logo_blue.png" style="height: 1.5%; width: 1.5%;"><a href="https://twitter.com/Cardshifter" class="navbar-brand csh-top-link" style="font-size: 1.2em; margin-top: 2px;">@Cardshifter</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
     </nav>
@@ -68,37 +69,129 @@
             <h5><a class="csh-nav-link" href="http://chat.stackexchange.com/rooms/16134/tcg-creation" target="_blank">Chat room</a></h5>
           </ul>
         </div>
+        <div class="col-sm-9 col-md-10 main"><br>
+          <h1 class="page-header">Header 1</h1>
 
 <!-- END OF NAVIGATION MENUS -->
-
-        <div class="col-sm-9 col-md-10 main"><br>
-          <h1 class="page-header">Welcome to Cardshifter.</h1>       
-        <div>        
+            
+      <div>        
         
 <!-- PAGE CONTENT STARTS HERE -->
         
       <div class="default-template csh-body">
-        <p>Cardshifter is an open-source Trading Card Game <i>(TCG)</i> project which began in August 2014. It is being developed by a team of dedicated software programmers, web developers and designers. The project focuses on several overarching ideas.</p>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3> 
+        <p>Paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing
+ elit. Nullam consectetur rutrum velit et sagittis. Nullam vitae mi sed 
+sapien ornare tincidunt. Suspendisse vel magna a nulla consectetur 
+consectetur.</p>
+        <span>
+          <a href="www.google.com">Link to Google.</a><br>
+          <strong>Strong text</strong><br>
+          <i>Italic text</i><br>
+          <u>Underlined text</u><br>
+          <strike>Strikethrough text</strike><br>
+          <code>Inline { Code() }</code><br>
+        </span><br>
+	
+        <pre>        class Cardshifter {
+            public static void main(String[] args) {
+                System.out.println("Hello Cardshifter!");
+            }
+        }</pre><br>
+        <blockquote>“Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.”<br>- Martin Golding</blockquote>
+          <img src="index_files/facepalm.jpg" class="img-thumbnail" alt="An immemorial facepalm." width="300" height="300"><br><br>
+          
+          <p> <!-- BUTTONS -->
+            <a href="CHANGEME.html" class="btn btn-default csh-button">Clear »</a>
+            <a href="CHANGEME.html" class="btn btn-primary csh-button">Blue »</a>
+            <a href="CHANGEME.html" class="btn btn-success csh-button">Green »</a>
+            <a href="CHANGEME.html" class="btn btn-info csh-button">Light blue »</a>
+            <a href="CHANGEME.html" class="btn btn-warning csh-button">Yellow »</a>
+            <a href="CHANGEME.html" class="btn btn-danger csh-button">Red »</a>
+          </p>
+          <!-- PANELS -->
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">White panel</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Blue panel</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Green panel</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Light blue panel</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-warning">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Yellow panel</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-danger">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Red panel</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+          </div>
 
-        <h2>Portability.</h2>
-        <p>The game client and server are being developed using the latest Java 8 and JavaFX and libGDX technology, which will ensure that the game will be highly portable to computers, tablets and mobile devices, all the while being lightweight enough not to be a burden on data plans. It will also employ vector graphics technology and will feature rich game statistics for players.</p>
-        <div style="padding-top: 5px;">
-          <a href="project.html" class="btn btn-primary csh-button">Learn more »</a>
-          <a href="contributors.html" class="btn btn-default csh-button">Meet the team »</a>
-        </div>
+        <table width="50%">
+          <tbody><tr>
+            <th>FooBar</th>
+            <th>Name</th>
+            <th>Number</th>
+          </tr>
+          <tr>
+            <td>Fizz</td>
+            <td>John Q. Developer</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Buzz</td>
+            <td>Jane Q. Maintainer</td>
+            <td>2</td>
+          </tr>
+        </tbody></table>
 
-        <h2>Moddability.</h2>
-        <p>The game will be highly moddable, in that it will allow you not only to play our game, but also make and play <i>your game</i> online with your friends on the Cardshifter servers. At the surface level, you will be able to create your own set of cards and your own game rules, with minimal to no programming knowledge. At the advanced level, should you want to use our platform and fork to make your own, that will also be possible.</p>
-        <div style="padding-top: 5px;">
-          <a href="mods.html" class="btn btn-primary csh-button">Learn more »</a>
-        </div>
-
-        <h2>Expandability.</h2>
-        <p>As the game is being developed, the team is making sure that the code is clear, modular, and most importantly, well documented. As such, a new member of the team can comfortably join in the programming work (we call it "fun") and explore the code base. Are you a programmer?</p>
-        <div style="padding-top: 5px;">
-          <a href="https://github.com/Cardshifter/Cardshifter" class="btn btn-primary csh-button" target="_blank">Explore the code »</a>
-          <a href="contribute.html" class="btn btn-success csh-button" target="_blank">Join in the fun! »</a>
-        </div>
 <!-- END PAGE CONTENT -->          
 
       </div>
