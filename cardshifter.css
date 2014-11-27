@@ -11,6 +11,16 @@ a.csh-top-link {
     font-size: 2em;
 }
 
+.csh-twitter {
+    list-style: none;
+    margin: 0;
+}
+
+.csh-twitter > li {
+    display: inline-block!important;
+}
+
+
 /* FORMATTING FOR LEFT SIDE NAV MENU */
 
 /* h4 and h5 are used for left nav bar links */
