@@ -21,9 +21,9 @@ a.csh-top-link {
 }
 
 img.twitter-logo {
-    height: 25px; 
-    width: 30px; 
-    margin-top: 10px; 
+    height: 25px;
+    width: 30px;
+    margin-top: 10px;
     -left: 5px;
 }
 
@@ -43,12 +43,12 @@ h5 {
     padding-left: 15px;
 }
 
-a.csh-nav-link { 
+a.csh-nav-link {
     color: #000000;
 }
 
 div.csh-nav-background {
-    background-color: #EEEEEE; 
+    background-color: #EEEEEE;
 }
 
 div.csh-nav-padding {
@@ -96,6 +96,9 @@ blockquote {
 div.copyright {
     padding-top: 20px;
     padding-left: 15px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* FORMATTING FOR TABLES */
@@ -119,4 +122,9 @@ th {
 .csh-button {
     font-size: 1.1em;
     font-weight: normal;
+}
+
+div.contributor {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
