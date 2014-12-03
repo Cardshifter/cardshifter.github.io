@@ -48,7 +48,8 @@ a.csh-nav-link {
 }
 
 div.csh-nav-background {
-    background-color: #EEEEEE; 
+    background-color: #EEEEEE;
+    
 }
 
 div.csh-nav-padding {
@@ -61,6 +62,27 @@ div.csh-body {
     padding-left: 15px;
 }
 
+/* FORMATTING FOR FOOTER */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    margin-top: 15px;
+    padding-top: 5px;
+    font-size: 0.8em;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 30px;
+    background-color: #f5f5f5;
+    margin-left: -15px;
+}
 
 /* FORMATTING FOR COMMON PAGE ELEMENTS */
 
