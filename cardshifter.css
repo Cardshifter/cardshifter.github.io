@@ -55,6 +55,9 @@ div.csh-nav-padding {
     padding-top: 50px;
 }
 
+div.csh-nav-margin {
+    margin-top: 50px;
+}
 /* FORMATTING FOR PAGE BODY */
 
 div.csh-body {
@@ -96,9 +99,9 @@ blockquote {
 div.copyright {
     padding-top: 20px;
     padding-left: 15px;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
+    padding-bottom: 5px;
+    position: absolute;
+    bottom: 0px;
 }
 
 /* FORMATTING FOR TABLES */
