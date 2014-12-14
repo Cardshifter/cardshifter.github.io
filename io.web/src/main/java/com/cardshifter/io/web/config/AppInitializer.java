@@ -28,9 +28,8 @@ public class AppInitializer  implements WebApplicationInitializer {
 				rootContext));
 		dispatcherSpring.setLoadOnStartup(1);
 		dispatcherSpring.addMapping("/");
-
+		
 		servletContext.addListener(new ContextLoaderListener(rootContext));
-
 	}
 
 }
