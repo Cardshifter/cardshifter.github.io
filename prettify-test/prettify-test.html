@@ -9,23 +9,28 @@
 
 <h1>Google Code Prettify testing</h1>
 
-<pre class="prettyprint" style="font-size: 12pt;">
+<pre class="prettyprint linenums" style="font-size: 10pt;">
+&lt;html&gt;&lt;body style="font-size: 12pt;"&gt;
+/* This is
+ * a block
+ * comment 
+ */
 &lt;script type="text/javascript"&gt;
 // This is a comment
 var myString = "Hello, World!";
 var myInt = 42;
-
 function helloWorld(world) {
-    for (var myInt; --myInt; myInt &gt;= 0;) {
-        alert('Hello ' + String(world));
+    for (i = 0; i &lt;= myInt; i++) {
+        alert(myString);
     }
 }
 &lt;/script&gt;
 &lt;style&gt;
-p { color: pink }
-b { color: blue }
-u { color: "umber" }
+    p { color: pink }
+    b { color: blue }
+    u { color: "umber" }
 &lt;/style&gt;
+&lt;/body&gt;&lt;/html&gt;
 </pre>
   
 </body>
