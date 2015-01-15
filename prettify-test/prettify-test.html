@@ -2,21 +2,102 @@
 <head>
     <title>Google Code Prettify testing</title>
     <link href="google-code-prettify/src/prettify.css" type="text/css" rel="stylesheet" />
-    <script type="text/javascript" src="google-code-prettify/js-modules/run_prettify.js"></script>
+    <script type="text/javascript" src="google-code-prettify/src/run_prettify.js?autoload=true&amp;skin=sons-of-obsidian"></script>
 </head>
 
 <body onload="prettyPrint()">
 
-<h1>Google Code Prettify testing</h1>
+<h3>C#/LINQ</h3>
 
-<pre class="prettyprint linenums" style="font-size: 10pt;">
+<pre class="prettyprint linenums" style="font-size: 8pt;">
+// this is a comment
+/*
+** Block quote
+*/
+public static class Evaluate
+{
+    public static string FizzBuzz(int start, int end)
+    {
+        return Enumerable.Range(start, (end - start) + 1)
+            .Select(FizzOrBuzz)
+            .Aggregate(String.Empty, (y, x) =&gt; String.Format("{0} {1}", y, x))
+            .Trim();
+    }
+
+    public static string FizzOrBuzz(int n)
+    {
+        if (n % 15 == 0) return "fizzbuzz";
+        if (n % 3 == 0) return "fizz";
+        if (n % 5 == 0) return "buzz";
+        return n.ToString();
+    }
+}
+</pre>
+    
+<h3>Java</h3>
+    
+<pre class="prettyprint linenums" style="font-size: 8pt;"> 
+public class FizzBuzz {
+    private static Stream&lt;String&gt; fizzBuzz(final int min, final int max) {
+        if (min &lt; 0) {
+            throw new IllegalArgumentException("min is negative: min = " + min);
+        }
+        if (min &gt; max) {
+            throw new IllegalArgumentException("min &gt; max: min = " + min + " / max = " + max);
+        }
+        return IntStream.rangeClosed(min, max)
+                .mapToObj(FizzBuzz::fizzBuzzify);
+    }
+
+    private static String fizzBuzzify(final int value) {
+        StringBuilder stringBuilder = new StringBuilder();
+        boolean toDefault = true;
+        if (value % 3 == 0) {
+            stringBuilder.append("Fizz");
+            toDefault = false;
+        }
+        if (value % 5 == 0) {
+            stringBuilder.append("Buzz");
+            toDefault = false;
+        }
+        return (toDefault) ? String.valueOf(value) : stringBuilder.toString();
+    }
+
+    public static void main(String[] args) {
+        fizzBuzz(1, 100).forEach(System.out::println);
+    }
+}
+</pre>
+
+<h3>Python</h3>
+
+<pre class="prettyprint linenums" style="font-size: 8pt;">
+# This is a comment
+def fizzbuzz(number):
+    if not number % 3:
+        if not number % 5:
+            return 'fizzbuzz'
+        else:
+            return 'fizz'
+    if not number % 5:
+        return 'buzz'
+    return number
+
+def main():
+    for i in range(1, 101):
+        print fizzbuzz(i)
+</pre>
+    
+<h3>HTML, CSS, JavaScript</h3>
+
+<pre class="prettyprint linenums" style="font-size: 8pt;">
 &lt;html&gt;&lt;body style="font-size: 12pt;"&gt;
-/* This is
- * a block
- * comment 
- */
+
 &lt;script type="text/javascript"&gt;
 // This is a comment
+/* 
+ * Block comment
+ */
 var myString = "Hello, World!";
 var myInt = 42;
 function helloWorld(world) {
@@ -32,6 +113,85 @@ function helloWorld(world) {
 &lt;/style&gt;
 &lt;/body&gt;&lt;/html&gt;
 </pre>
-  
+    
+<h3>PHP</h3>
+
+<pre class="prettyprint linenums" style="font-size: 8pt;">
+&lt;?php
+$counter = 1;
+$stopper = 100;
+$fizzWord = 'Fizz';
+$fizzNumber = 3;
+$buzzWord = 'Buzz';
+$buzzNumber = 5;
+
+for ($counter = 1; $counter &lt;= $stopper; $counter++) {
+    if ((($counter %($fizzNumber * $buzzNumber) == 0))) {
+        echo $fizzWord . $buzzWord;
+    }
+    elseif (($counter % $fizzNumber) == 0) {
+        echo $fizzWord;
+    }
+    elseif (($counter % $buzzNumber) == 0) {
+        echo $buzzWord;
+    }   
+    else {
+        echo $counter;
+    }
+echo "&lt;br&gt;\n";
+}
+?&gt;
+</pre>
+
+<h3>VBA</h3>
+<p><i>Comments removed on purpose as Prettify doesn't render them correctly. SE's system has a fix for it.</i></p>
+
+<pre class="prettyprint linenums" style="font-size: 8pt;">
+Option Explicit
+
+Public Function Chop(target As Long, Arr() As Long, Optional midpoint As Long = -1) As Long
+    Dim result As Long
+    Dim currentTest As Long
+
+    If Not IsArrayAllocated(Arr) Then
+        Chop = -1
+        Exit Function
+    End If
+
+    If midpoint %lt; 0 Then
+        midpoint = UBound(Arr) \ 2
+    End If
+
+    currentTest = Arr(midpoint)
+
+    If target = currentTest Then
+        result = midpoint
+    ElseIf midpoint = 0 Or (Arr(UBound(Arr)) &lt; target) Then
+        result = -1
+    Else
+        If target &gt; currentTest Then
+            midpoint = midpoint + (midpoint \ 2)
+            If midpoint &gt; UBound(Arr) Then midpoint = UBound(Arr)
+        Else
+            midpoint = midpoint \ 2
+        End If
+
+        result = Chop(target, Arr, midpoint)
+    End If
+
+    Chop = result
+End Function
+
+Function IsArrayAllocated(Arr As Variant) As Boolean
+    On Error Resume Next
+    IsArrayAllocated = IsArray(Arr) And _
+                       Not IsError(LBound(Arr, 1)) And _
+                       LBound(Arr, 1) &lt;= UBound(Arr, 1)
+End Function
+</pre>
+
+
+
+
 </body>
 </html>
