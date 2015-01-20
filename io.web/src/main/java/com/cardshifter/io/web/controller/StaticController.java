@@ -24,4 +24,9 @@ public class StaticController {
 		return "mods";
 	}
 	
+	@RequestMapping(value = "/contribute",method = RequestMethod.GET)
+	public String contribute(Model model) {
+		return "contribute";
+	}
+	
 }
