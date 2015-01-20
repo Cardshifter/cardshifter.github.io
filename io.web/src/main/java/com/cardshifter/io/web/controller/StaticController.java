@@ -13,4 +13,15 @@ public class StaticController {
 	public String index(Model model) {
 		return "index";
 	}
+	
+	@RequestMapping(value = "/contributors",method = RequestMethod.GET)
+	public String contributors(Model model) {
+		return "contributors";
+	}
+	
+	@RequestMapping(value = "/mods",method = RequestMethod.GET)
+	public String mods(Model model) {
+		return "mods";
+	}
+	
 }

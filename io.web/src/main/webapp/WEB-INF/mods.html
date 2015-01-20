@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Cardshifter card game / TCG, open source github with Java 8 &amp; JavaFX"/>
+    <meta name="author" content="github.com/Phrancis"/>
+    <link rel="icon" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/favicon.ico"/>
+
+    <title>Cardshifter</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom styles for this template -->
+    <link href="cardshifter.css" rel="stylesheet" th:href="@{/css/cardshifter.css}"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div th:replace="templates\navbar_top :: navbar-top"></div>
+    <div class="container-fluid" >
+      <div th:replace="templates\side_naviguation :: left-side-navigation"></div>
+      <div class="row">
+        <div>
+
+<!-- PAGE CONTENT STARTS HERE -->
+
+      <div class="default-template csh-body">
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <p>Paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing
+ elit. Nullam consectetur rutrum velit et sagittis. Nullam vitae mi sed
+sapien ornare tincidunt. Suspendisse vel magna a nulla consectetur
+consectetur.</p>
+        <span>
+          <a href="www.google.com">Link to Google.</a><br/>
+          <strong>Strong text</strong><br/>
+          <i>Italic text</i><br/>
+          <u>Underlined text</u><br/>
+          <strike>Strikethrough text</strike><br/>
+          <code>Inline { Code() }</code><br/>
+        </span><br/>
+
+        <pre>        class Cardshifter {
+            public static void main(String[] args) {
+                System.out.println("Hello Cardshifter!");
+            }
+        }</pre><br/>
+        <blockquote>“Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live.”<br/>- Martin Golding</blockquote>
+          <img src="index_files/facepalm.jpg" class="img-thumbnail" alt="An immemorial facepalm." width="300" height="300"/><br/><br/>
+
+          <p> <!-- BUTTONS -->
+            <a href="CHANGEME.html" class="btn btn-default csh-button">Clear »</a>
+            <a href="CHANGEME.html" class="btn btn-primary csh-button">Blue »</a>
+            <a href="CHANGEME.html" class="btn btn-success csh-button">Green »</a>
+            <a href="CHANGEME.html" class="btn btn-info csh-button">Light blue »</a>
+            <a href="CHANGEME.html" class="btn btn-warning csh-button">Yellow »</a>
+            <a href="CHANGEME.html" class="btn btn-danger csh-button">Red »</a>
+          </p>
+          <!-- PANELS -->
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">White panel</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Blue panel</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Green panel</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Light blue panel</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-warning">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Yellow panel</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="panel panel-danger">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Red panel</h3>
+                </div>
+                <div class="panel-body">
+                  Panel content
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <table width="50%">
+          <tbody><tr>
+            <th>FooBar</th>
+            <th>Name</th>
+            <th>Number</th>
+          </tr>
+          <tr>
+            <td>Fizz</td>
+            <td>John Q. Developer</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Buzz</td>
+            <td>Jane Q. Maintainer</td>
+            <td>2</td>
+          </tr>
+        </tbody></table>
+
+<!-- END PAGE CONTENT -->
+
+      </div></div></div></div>
+
+        <div th:replace="templates\footer :: footer"></div>
+        <div th:replace="templates\scripts_loader :: scripts"></div>
+
+
+
+
+        </body></html>
