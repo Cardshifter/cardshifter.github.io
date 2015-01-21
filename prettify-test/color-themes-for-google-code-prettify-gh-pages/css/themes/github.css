@@ -1,18 +1,31 @@
 /* GitHub Theme */
 .prettyprint {
   background: white;
+<<<<<<< HEAD
   font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace;
+=======
+  font-family: Monaco, Consolas, Courier New, monospace;
+>>>>>>> develop
   font-size: 12px;
   line-height: 1.5;
   border: 1px solid #ccc;
   padding: 10px;
 }
+<<<<<<< HEAD
 
+=======
+code {
+  font-family: Monaco, Consolas, Courier New, monospace;
+  font-size:12px;
+}
+/* Plain text */
+>>>>>>> develop
 .pln {
   color: #333333;
 }
 
 @media screen {
+<<<<<<< HEAD
   .str {
     color: #dd1144;
   }
@@ -65,6 +78,61 @@
     color: teal;
   }
 
+=======
+/* String content */
+  .str {
+    color: #dd1144;
+  }
+/* Keyword */
+  .kwd {
+    color: #333333;
+  }
+/* Comment */
+  .com {
+    color: #999988;
+  }
+/* Type name */
+  .typ {
+    color: #445588;
+  }
+/* Literal value */
+  .lit {
+    color: #445588;
+  }
+/* Punctuation */
+  .pun {
+    color: #333333;
+  }
+/* Lisp open bracket */
+  .opn {
+    color: #333333;
+  }
+/* Lisp close bracket */
+  .clo {
+    color: #333333;
+  }
+/* Mark-up tag name */
+  .tag {
+    color: navy;
+  }
+/* Mark-up attribute name */
+  .atn {
+    color: teal;
+  }
+/* Markup attribute value */
+  .atv {
+    color: #dd1144;
+  }
+/* Declaration */
+  .dec {
+    color: #333333;
+  }
+/* Variable name */
+  .var {
+    color: teal;
+  }
+/* Function name */
+>>>>>>> develop
   .fun {
     color: #990000;
   }
