@@ -17,3 +17,7 @@ git commit -m "message text here"
 #
 # Push commit to remote
 git push
+# Merge develop into master
+git checkout master
+git merge develop
+git push
