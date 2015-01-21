@@ -28,7 +28,7 @@
 
 <h3>C#/LINQ</h3>
 
-<pre class="prettyprint" style="font-size: 8pt;">
+<pre class="prettyprint linenums lang-csharp lang-linq" style="font-size: 8pt;">
 // this is a comment
 /*
 ** Block quote
@@ -56,8 +56,7 @@ public static class Evaluate
     
 <h3>Java</h3>
     
-<pre class="prettyprint linenums" style="font-size: 8pt;"> 
-public class FizzBuzz {
+<pre class="prettyprint linenums lang-java" style="font-size: 8pt;"> public class FizzBuzz {
     private static Stream&lt;String&gt; fizzBuzz(final int min, final int max) {
         if (min &lt; 0) {
             throw new IllegalArgumentException("min is negative: min = " + min);
@@ -91,7 +90,7 @@ public class FizzBuzz {
 
 <h3>Python</h3>
 
-<pre class="prettyprint linenums" style="font-size: 8pt;">
+<pre class="prettyprint linenums lang-python" style="font-size: 8pt;">
 # This is a comment
 def fizzbuzz(number):
     if not number % 3:
@@ -110,7 +109,7 @@ def main():
     
 <h3>HTML, CSS, JavaScript</h3>
 
-<pre class="prettyprint linenums" style="font-size: 8pt;">
+<pre class="prettyprint linenums lang-html lang-js lang-css" style="font-size: 8pt;">
 &lt;html&gt;&lt;body style="font-size: 12pt;"&gt;
 
 &lt;script type="text/javascript"&gt;
@@ -134,9 +133,28 @@ function helloWorld(world) {
 &lt;/body&gt;&lt;/html&gt;
 </pre>
     
+<h3>SQL</h3>
+
+<pre class="prettyprint linenums lang-sql" style="font-size: 8pt;">
+CREATE TABLE foo (
+    Id INT NOT NULL,
+    Word VARCHAR(100)
+);
+DECLARE @var;
+SET @var = 'bar';
+INSERT INTO foo (Id, Word)
+    VALUEs (1, @var);
+SELECT Id
+     , Word
+FROM foo
+WHERE Word IS NOT NULL;
+</pre>    
+    
+    
+    
 <h3>PHP</h3>
 
-<pre class="prettyprint linenums" style="font-size: 8pt;">
+<pre class="prettyprint linenums lang-php" style="font-size: 8pt;">
 &lt;?php
 $counter = 1;
 $stopper = 100;
@@ -166,9 +184,9 @@ echo "&lt;br&gt;\n";
 <h3>VBA</h3>
 <p><i>Comments removed on purpose as Prettify doesn't render them correctly. SE's system has a fix for it.</i></p>
 
-<pre class="prettyprint linenums" style="font-size: 8pt;">
+<pre class="prettyprint linenums lang-vb" style="font-size: 8pt;">
 Option Explicit
-
+' This is a comment '
 Public Function Chop(target As Long, Arr() As Long, Optional midpoint As Long = -1) As Long
     Dim result As Long
     Dim currentTest As Long
@@ -178,7 +196,7 @@ Public Function Chop(target As Long, Arr() As Long, Optional midpoint As Long = 
         Exit Function
     End If
 
-    If midpoint %lt; 0 Then
+    If midpoint < 0 Then
         midpoint = UBound(Arr) \ 2
     End If
 
@@ -186,12 +204,12 @@ Public Function Chop(target As Long, Arr() As Long, Optional midpoint As Long = 
 
     If target = currentTest Then
         result = midpoint
-    ElseIf midpoint = 0 Or (Arr(UBound(Arr)) &lt; target) Then
+    ElseIf midpoint = 0 Or (Arr(UBound(Arr)) < target) Then
         result = -1
     Else
-        If target &gt; currentTest Then
+        If target > currentTest Then
             midpoint = midpoint + (midpoint \ 2)
-            If midpoint &gt; UBound(Arr) Then midpoint = UBound(Arr)
+            If midpoint > UBound(Arr) Then midpoint = UBound(Arr)
         Else
             midpoint = midpoint \ 2
         End If
@@ -206,7 +224,7 @@ Function IsArrayAllocated(Arr As Variant) As Boolean
     On Error Resume Next
     IsArrayAllocated = IsArray(Arr) And _
                        Not IsError(LBound(Arr, 1)) And _
-                       LBound(Arr, 1) &lt;= UBound(Arr, 1)
+                       LBound(Arr, 1) <= UBound(Arr, 1)
 End Function
 </pre>
 
