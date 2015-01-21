@@ -22,17 +22,33 @@
   <script src="color-themes-for-google-code-prettify-gh-pages/js/modernizr-2.5.3.min.js"></script>
 
 </head>
-<body>
+<body style="margin-left: 15px;">
+<h2>Google Prettify Testing: Github default</h2>
 
-
+<h3>Color Reference</h3>
+    <code class="pln ">Plain text</code><br /> 
+    <code class="str">"String content"</code><br />
+    <code class="kwd">Keyword</code><br />
+    <code class="com">// Comment</code><br />
+    <code class="typ">Type name</code><br />
+    <code class="lit">Literal value 42</code><br />
+    <code class="pun">Punctuation...</code><br />
+    <code class="dec">Declaration</code><br />
+    <code class="var">Variable name</code><br />
+    <code class="fun">Function name</code><br />
+    <br />
+    <code class="opn">Lisp {open bracket</code><br />
+    <code class="clo">Lisp close} bracket</code><br />
+    <br />
+    <code class="tag">&lt;Markup tag name&gt;</code><br />
+    <code class="atn">&lt;Markup attribute-name=""&gt;</code><br />
+    <code class="atv">&lt;Markup attribute="value"&gt;</code><br />
+    <br />
 
 <h3>C#/LINQ</h3>
 
-<pre class="prettyprint linenums lang-csharp lang-linq" style="font-size: 8pt;">
+<pre class="prettyprint linenums lang-csharp lang-linq">
 // this is a comment
-/*
-** Block quote
-*/
 public static class Evaluate
 {
     public static string FizzBuzz(int start, int end)
@@ -56,7 +72,7 @@ public static class Evaluate
     
 <h3>Java</h3>
     
-<pre class="prettyprint linenums lang-java" style="font-size: 8pt;"> public class FizzBuzz {
+<pre class="prettyprint linenums lang-java"> public class FizzBuzz {    // this is a comment
     private static Stream&lt;String&gt; fizzBuzz(final int min, final int max) {
         if (min &lt; 0) {
             throw new IllegalArgumentException("min is negative: min = " + min);
@@ -90,7 +106,7 @@ public static class Evaluate
 
 <h3>Python</h3>
 
-<pre class="prettyprint linenums lang-python" style="font-size: 8pt;">
+<pre class="prettyprint linenums lang-python">
 # This is a comment
 def fizzbuzz(number):
     if not number % 3:
@@ -109,14 +125,11 @@ def main():
     
 <h3>HTML, CSS, JavaScript</h3>
 
-<pre class="prettyprint linenums lang-html lang-js lang-css" style="font-size: 8pt;">
+<pre class="prettyprint linenums lang-html lang-js lang-css">
 &lt;html&gt;&lt;body style="font-size: 12pt;"&gt;
-
+&lt;!-- this is a comment --&gt;
 &lt;script type="text/javascript"&gt;
-// This is a comment
-/* 
- * Block comment
- */
+// another comment
 var myString = "Hello, World!";
 var myInt = 42;
 function helloWorld(world) {
@@ -126,6 +139,7 @@ function helloWorld(world) {
 }
 &lt;/script&gt;
 &lt;style&gt;
+    /* another comment */
     p { color: pink }
     b { color: blue }
     u { color: "umber" }
@@ -135,27 +149,26 @@ function helloWorld(world) {
     
 <h3>SQL</h3>
 
-<pre class="prettyprint linenums lang-sql" style="font-size: 8pt;">
+<pre class="prettyprint linenums lang-sql">
 CREATE TABLE foo (
     Id INT NOT NULL,
     Word VARCHAR(100)
 );
-DECLARE @var;
+DECLARE @var; /* this is a comment */
 SET @var = 'bar';
-INSERT INTO foo (Id, Word)
-    VALUEs (1, @var);
+INSERT INTO foo (Id, Word)  --also a comment
+    VALUES (1, @var);
 SELECT Id
      , Word
 FROM foo
 WHERE Word IS NOT NULL;
 </pre>    
-    
-    
-    
+      
 <h3>PHP</h3>
 
-<pre class="prettyprint linenums lang-php" style="font-size: 8pt;">
+<pre class="prettyprint linenums lang-php">
 &lt;?php
+// this is a comment
 $counter = 1;
 $stopper = 100;
 $fizzWord = 'Fizz';
@@ -184,7 +197,7 @@ echo "&lt;br&gt;\n";
 <h3>VBA</h3>
 <p><i>Comments removed on purpose as Prettify doesn't render them correctly. SE's system has a fix for it.</i></p>
 
-<pre class="prettyprint linenums lang-vb" style="font-size: 8pt;">
+<pre class="prettyprint linenums lang-vb">
 Option Explicit
 ' This is a comment '
 Public Function Chop(target As Long, Arr() As Long, Optional midpoint As Long = -1) As Long
