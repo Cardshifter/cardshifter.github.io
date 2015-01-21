@@ -21,9 +21,9 @@ a.csh-top-link {
 }
 
 img.twitter-logo {
-    height: 25px; 
-    width: 30px; 
-    margin-top: 10px; 
+    height: 25px;
+    width: 30px;
+    margin-top: 10px;
     -left: 5px;
 }
 
@@ -43,19 +43,25 @@ h5 {
     padding-left: 15px;
 }
 
-a.csh-nav-link { 
+a.csh-nav-link {
     color: #000000;
 }
 
 div.csh-nav-background {
     background-color: #EEEEEE;
+<<<<<<< HEAD
     
+=======
+>>>>>>> develop
 }
 
 div.csh-nav-padding {
     padding-top: 50px;
 }
 
+div.csh-nav-margin {
+    margin-top: 50px;
+}
 /* FORMATTING FOR PAGE BODY */
 
 div.csh-body {
@@ -118,6 +124,9 @@ blockquote {
 div.copyright {
     padding-top: 20px;
     padding-left: 15px;
+    padding-bottom: 5px;
+    position: absolute;
+    bottom: 0px;
 }
 
 /* FORMATTING FOR TABLES */
@@ -141,4 +150,9 @@ th {
 .csh-button {
     font-size: 1.1em;
     font-weight: normal;
+}
+
+div.contributor {
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
