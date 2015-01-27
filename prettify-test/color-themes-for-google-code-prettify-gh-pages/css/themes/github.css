@@ -7,74 +7,17 @@
   border: 1px solid #ccc;
   padding: 10px;
 }
-<<<<<<< HEAD
 
-=======
 code {
   font-family: Monaco, Consolas, Courier New, monospace;
   font-size:12px;
 }
 /* Plain text */
->>>>>>> develop
 .pln {
   color: #333333;
 }
 
 @media screen {
-<<<<<<< HEAD
-  .str {
-    color: #dd1144;
-  }
-
-  .kwd {
-    color: #333333;
-  }
-
-  .com {
-    color: #999988;
-  }
-
-  .typ {
-    color: #445588;
-  }
-
-  .lit {
-    color: #445588;
-  }
-
-  .pun {
-    color: #333333;
-  }
-
-  .opn {
-    color: #333333;
-  }
-
-  .clo {
-    color: #333333;
-  }
-
-  .tag {
-    color: navy;
-  }
-
-  .atn {
-    color: teal;
-  }
-
-  .atv {
-    color: #dd1144;
-  }
-
-  .dec {
-    color: #333333;
-  }
-
-  .var {
-    color: teal;
-  }
-
-=======
 /* String content */
   .str {
     color: #dd1144;
@@ -128,7 +71,6 @@ code {
     color: teal;
   }
 /* Function name */
->>>>>>> develop
   .fun {
     color: #990000;
   }
