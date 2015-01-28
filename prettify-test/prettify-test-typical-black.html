@@ -1,4 +1,4 @@
-Enter file contents here<!doctype html>
+<!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
@@ -23,7 +23,7 @@ Enter file contents here<!doctype html>
 
 </head>
 <body style="margin-left: 15px;">
-<h2>Google Prettify Testing: Typical black setting</h2>
+<h2>Google Prettify Testing: "Visual Studio" black themed</h2>
 
 <h3>Color Reference</h3>
     <code class=" pln ">Plain text</code><br /> 
@@ -46,9 +46,6 @@ Enter file contents here<!doctype html>
     <br />
 
 <h3>C#/LINQ</h3>
-<p>(Visual Studio)<p>
-
-<img src="IDE-samples/Csharp-Visual-Studio-black.png" /><br />
 
 <pre class="prettyprint linenums">
 // this is a comment
@@ -74,10 +71,7 @@ public static class Evaluate
 
     
 <h3>Java</h3>
-<p>(Eclipse Vogel612 custom setting)<p>
 
-<img src="IDE-samples/Java-Eclipse-Vogel-custom.png" /><br />
-    
 <pre class="prettyprint linenums lang-java"> public class FizzBuzz {    // this is a comment
     private static Stream&lt;String&gt; fizzBuzz(final int min, final int max) {
         if (min &lt; 0) {
@@ -111,9 +105,6 @@ public static class Evaluate
 </pre>
 
 <h3>Python</h3>
-<p>(Visual Studio)<p>
-
-<img src="IDE-samples/Python-Visual-Studio-black.png" /><br />
 
 <pre class="prettyprint linenums lang-python">
 # This is a comment
@@ -133,9 +124,6 @@ def main():
 </pre>
     
 <h3>HTML, CSS, JavaScript</h3>
-<p>(Visual Studio)<p>
-
-<img src="IDE-samples/HTML-Visual-Studio-black.png" /><br />
 
 <pre class="prettyprint linenums lang-html lang-js lang-css">
 &lt;html&gt;&lt;body style="font-size: 12pt;"&gt;
@@ -166,45 +154,16 @@ CREATE TABLE foo (
     Id INT NOT NULL,
     Word VARCHAR(100)
 );
-DECLARE @var; /* this is a comment */
+/* this is a comment */
+DECLARE @var;
 SET @var = 'bar';
-INSERT INTO foo (Id, Word)  --also a comment
+INSERT INTO foo (Id, Word)
     VALUES (1, @var);
 SELECT Id
      , Word
 FROM foo
 WHERE Word IS NOT NULL;
 </pre>    
-      
-<h3>PHP</h3>
-
-<pre class="prettyprint linenums lang-php">
-&lt;?php
-// this is a comment
-$counter = 1;
-$stopper = 100;
-$fizzWord = 'Fizz';
-$fizzNumber = 3;
-$buzzWord = 'Buzz';
-$buzzNumber = 5;
-
-for ($counter = 1; $counter &lt;= $stopper; $counter++) {
-    if ((($counter %($fizzNumber * $buzzNumber) == 0))) {
-        echo $fizzWord . $buzzWord;
-    }
-    elseif (($counter % $fizzNumber) == 0) {
-        echo $fizzWord;
-    }
-    elseif (($counter % $buzzNumber) == 0) {
-        echo $buzzWord;
-    }   
-    else {
-        echo $counter;
-    }
-echo "&lt;br&gt;\n";
-}
-?&gt;
-</pre>
     
 <h3>Lisp</h3>
 
@@ -220,9 +179,6 @@ echo "&lt;br&gt;\n";
 </pre>
 
 <h3>VBA</h3>
-<p>(Visual Studio)<p>
-
-<img src="IDE-samples/VBA-Visual-Studio-black.png" /><br />
 
 <pre class="prettyprint linenums lang-vb">
 Option Explicit
