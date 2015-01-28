@@ -26,23 +26,23 @@ Enter file contents here<!doctype html>
 <h2>Google Prettify Testing: Typical black setting</h2>
 
 <h3>Color Reference</h3>
-    <code class="pln ">Plain text</code><br /> 
-    <code class="str">"String content"</code><br />
-    <code class="kwd">Keyword</code><br />
-    <code class="com">// Comment</code><br />
-    <code class="typ">Type name</code><br />
-    <code class="lit">Literal value 42</code><br />
-    <code class="pun">Punctuation...</code><br />
-    <code class="dec">Declaration</code><br />
-    <code class="var">Variable name</code><br />
-    <code class="fun">Function name</code><br />
+    <code class=" pln ">Plain text</code><br /> 
+    <code class=" str">"String content"</code><br />
+    <code class=" kwd">Keyword</code><br />
+    <code class=" com">// Comment</code><br />
+    <code class=" typ">Type name</code><br />
+    <code class=" lit">Literal value 42</code><br />
+    <code class=" pun">Punctuation...</code><br />
+    <code class=" dec">Declaration</code><br />
+    <code class=" var">Variable name</code><br />
+    <code class=" fun">Function name</code><br />
     <br />
 <!--
     <code class="opn">Lisp {open bracket</code><br />
     <code class="clo">Lisp close} bracket</code><br />
     <br />
 -->
-    <code class="pun">&lt;</code><code class="tag">script </code><code class="atn">type</code><code class="pun">="</code><code class="atv">text/javascript</code><code class="pun">"&gt;</code><br />
+    <code class=" pun">&lt;</code><code class=" tag">script </code><code class=" atn">type</code><code class=" pun">="</code><code class=" atv">text/javascript</code><code class=" pun">"&gt;</code><br />
     <br />
 
 <h3>C#/LINQ</h3>
@@ -50,7 +50,7 @@ Enter file contents here<!doctype html>
 
 <img src="IDE-samples/Csharp-Visual-Studio-black.png" /><br />
 
-<pre class="prettyprint linenums lang-csharp lang-linq">
+<pre class="prettyprint linenums">
 // this is a comment
 public static class Evaluate
 {
@@ -204,6 +204,19 @@ for ($counter = 1; $counter &lt;= $stopper; $counter++) {
 echo "&lt;br&gt;\n";
 }
 ?&gt;
+</pre>
+    
+<h3>Lisp</h3>
+
+<pre class="prettyprint linenums lang-lisp">
+(defun is-multiple (i against)
+  (= (mod i against) 0))
+(defun num-action (i)
+  (cond ((and (is-multiple i 3) (is-multiple i 5)) (print "FizzBuzz"))
+    ((is-multiple i 3) (print "Fizz"))
+    ((is-multiple i 5) (print "Buzz"))
+    (T (print i))))
+(dotimes (i 101) (num-action i))
 </pre>
 
 <h3>VBA</h3>

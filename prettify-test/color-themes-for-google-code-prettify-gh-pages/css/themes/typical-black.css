@@ -1,17 +1,17 @@
-Enter file contents here/* GitHub Theme */
+/* GitHub Theme */
 .prettyprint {
-  background: black;
-  font-family: Monaco, Consolas, Courier New, monospace;
+  background-color: black;
+  font-family: Monaco, Consolas, "Courier New", monospace;
   font-size: 12px;
-  line-height: 1.5;
-  border: 1px solid #ccc;
+  line-height: 1.3;
+  border: 1px solid #000000;
   padding: 10px;
 }
 
 code {
   background: black;
-  font-family: Monaco, Consolas, Courier New, monospace;
-  font-size:14px;
+  font-family: Monaco, Consolas, "Courier New", monospace;
+  font-size:12px;
 }
 /* Plain text */
 .pln {
@@ -61,7 +61,7 @@ code {
   }
 /* Markup attribute value */
   .atv {
-    color: #E6E6E6;
+    color: #999999;
   }
 /* Declaration */
   .dec {
@@ -135,7 +135,9 @@ li.L6,
 li.L7,
 li.L8,
 li.L9 {
-  /* */
+  background-color: black;
+  font-family: Monaco, Consolas, "Courier New", monospace;
+  font-size: 12px;
 }
 
 /* Alternate shading for lines */
@@ -144,5 +146,7 @@ li.L3,
 li.L5,
 li.L7,
 li.L9 {
-  /* */
+  background-color: black;
+  font-family: Monaco, Consolas, "Courier New", monospace;
+  font-size: 12px;
 }
