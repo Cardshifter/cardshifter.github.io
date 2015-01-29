@@ -1,4 +1,4 @@
-/* Typical black theme */
+/* Obsidian theme */
 .prettyprint {
   background-color: black;
   font-family: Consolas, Monaco, "Courier New", monospace;
@@ -15,7 +15,7 @@ code {
 }
 /* Plain text */
 .pln {
-  color: F1F2F3;
+  color: #F1F2F3;
 }
 
 @media screen, print, projection {
@@ -37,7 +37,7 @@ code {
   }
 /* Literal value */
   .lit {
-    color: FACD22;
+    color: #FACD22;
   }
 /* Punctuation */
   .pun {

@@ -1,8 +1,8 @@
-/* Typical white theme */
+/* IDEA theme */
 .prettyprint {
   background: white;
   font-family: Consolas, Monaco, "Courier New", monospace;
-  font-size: 12pt;
+  font-size: 9pt;
   line-height: 1.3;
   border: 1px solid #000000;
   padding: 10px;
@@ -11,7 +11,7 @@
 code {
   background: white;
   font-family: Consolas, Monaco, "Courier New", monospace;
-  font-size: 12pt;
+  font-size: 9pt;
 }
 /* Plain text */
 .pln {
