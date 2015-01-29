@@ -1,9 +1,6 @@
-<<<<<<< HEAD
+
 cardshifter.github.io
 =======
-# cardshifter.github.io
->>>>>>> java-web
-=====================
 
 ## Cardshifter Website
 
@@ -53,9 +50,5 @@ If you wish to contribute, please take one of the following steps:
 
 - Use JPEG format for photographic images.
 
-<<<<<<< HEAD
-- Use SVG format for vectorial images. 
-=======
 - Use SVG format for vectorial images. 
 
->>>>>>> java-web
