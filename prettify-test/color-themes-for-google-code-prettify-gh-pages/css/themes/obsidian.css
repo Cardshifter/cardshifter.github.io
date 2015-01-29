@@ -1,4 +1,4 @@
-/* Obsidian theme */
+/* Hosch250 "Obsidian" theme */
 .prettyprint {
   background-color: black;
   font-family: Consolas, Monaco, "Courier New", monospace;
@@ -8,14 +8,20 @@
   padding: 10px;
 }
 
+.prettify {
+    background-color: transparent;
+    border-width: 0px;
+}
+
 code {
   background: black;
   font-family: Consolas, Monaco, "Courier New", monospace;
   font-size:9pt;
 }
+
 /* Plain text */
 .pln {
-  color: #F1F2F3;
+  color: white;
 }
 
 @media screen, print, projection {
@@ -45,11 +51,11 @@ code {
   }
 /* Lisp open bracket */
   .opn {
-    color: #333333;
+    color: #BBBBBB;
   }
 /* Lisp close bracket */
   .clo {
-    color: #333333;
+    color: #BBBBBB;
   }
 /* Mark-up tag name */
   .tag {
@@ -85,11 +91,10 @@ ol.linenums {
 
 /* IE indents via margin-left */
 ul.linenums li {
-    color: #555;
-    list-style-type: decimal;
+    background-color: black;
 }
 
 /* Alternate shading for lines */
-ul.linenums li:nth-child(odd) {
-    background: #111;
+ul.linenums li:nth-child(even) {
+    background-color: #101010;
 }
