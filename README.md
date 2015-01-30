@@ -2,6 +2,8 @@
 cardshifter.github.io
 =======
 
+######_Updated 2015-30-01_
+
 ## Cardshifter Website
 
 This repository is closely tied to the [Cardshifter](https://github.com/Cardshifter/Cardshifter) repository. Cardshifter is an open-source online Trading Card Game (TCG) using Java 8 and related technologies.
@@ -13,6 +15,8 @@ The purpose of the website is to promote and inform about the project, and about
 If you wish to contribute, please take one of the following steps:
 
 - Open a [Github Issue](https://github.com/Cardshifter/cardshifter.github.io/issues).
+ 
+- Create a pull request.
 
 - Contact [@Phrancis](https://github.com/Phrancis) or [@marcandregirard](https://github.com/marcandregirard) via Github.
 
@@ -20,9 +24,14 @@ If you wish to contribute, please take one of the following steps:
 
 ### Coding guidelines
 
+The HTML and CSS source files are currently located in the following [sub-directory](https://github.com/Cardshifter/cardshifter.github.io/tree/master/io.web/src/main/webapp/WEB-INF):<br>
+**/io.web/src/main/webapp/WEB-INF**
+
+**Important note:** If you wish to work directly on the project via branching or pull request, you will need a Java IDE as well as Maven and Tomcat server extensions. If you need help setting up please open an Issue and label it "Support Request", or join the [chatroom](http://chat.stackexchange.com/rooms/16134/tcg-creation) on Stack Exchange.
+
 ##### HTML
 
-- Do not use pre-HTML 5 tags, especially for formatting. Use CSS instead.
+- Do not use HTML properties, especially for formatting, unless absolutely necessary. Use CSS instead.
 
 - Use spaces, rather than tabs, for indentation. Two spaces for small indentation (e.g., between `<div>` sections) and four spaces for large indentation (e.g. between large sections).
 
