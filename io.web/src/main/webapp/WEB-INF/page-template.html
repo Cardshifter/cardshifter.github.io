@@ -25,64 +25,16 @@
 
   <body>
 
-<!-- THIS CODE GENERATES THE NAVIGATION MENUS; DO NOT CHANGE IT -->      
-      
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
- <!-- RIGHT SIDE DROP-DOWN MENU NOT NEEDED RIGHT NOW
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
--->
-          <a class="navbar-brand csh-top-link" href="index.html">Cardshifter</a>
-
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="csh-twitter-top-bar nav navbar-nav">
-              <li>
-                  <img src="images/logos/Twitter_logo_blue.png" class="twitter-logo">
-              </li>
-              <li>
-                  <a href="https://twitter.com/Cardshifter" class="navbar-brand csh-top-link" style="font-size: 1.4em; margin-top: 2px;">@Cardshifter</a>
-              </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-    </nav>
-      
-    <div class="container-fluid">
+    <div th:replace="templates\navbar_top :: navbar-top"></div>
+    <div class="container-fluid" >
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar csh-nav-background csh-nav-padding">
-          <ul class="nav nav-sidebar">
-            <h4><a class="csh-nav-link" href="index.html">Home</a></h4>
-            <h4><a class="csh-nav-link" href="play-cardshifter.html">Play Cardshifter!</a></h4>
-            <h4><a class="csh-nav-link" href="news.html">News</a></h4>
-            <h5><a class="csh-nav-link" href="https://github.com/Cardshifter/Cardshifter/releases" target="_blank">Latest Release</a></h5>
-            <h5><a class="csh-nav-link" href="https://github.com/Cardshifter/Cardshifter/issues" target="_blank">New Git issues</a></h5>
-            <h4><a class="csh-nav-link" href="project.html">Project</a></h4>
-            <h5><a class="csh-nav-link" href="contributors.html">Contributors</a></h5>
-            <h5><a class="csh-nav-link" href="images.html">Images</a></h5>
-            <h5><a class="csh-nav-link" href="https://github.com/Cardshifter/Cardshifter/wiki" target="_blank">Wiki</a></h5>
-            <h5><a class="csh-nav-link" href="contribute.html">Contribute!</a></h5>
-            <h4><a class="csh-nav-link" href="mods.html">Mods</a></h4>
-            <h5><a class="csh-nav-link" href="cyborg-chronicles.html">Cyborg Chronicles</a></h5>
-            <h5><a class="csh-nav-link" href="new-mod.html">Start a New Mod!</a></h5>
-            <h4><a class="csh-nav-link" href="contact-us.html">Contact Us</a></h4>
-            <h5><a class="csh-nav-link" href="report-bug.html">Report a bug</a></h5>
-            <h5><a class="csh-nav-link" href="request-feature.html">Request a feature</a></h5>
-            <h5><a class="csh-nav-link" href="http://chat.stackexchange.com/rooms/16134/tcg-creation" target="_blank">Chat room</a></h5>
-          </ul>
-        </div>
-        <div class="col-sm-9 col-md-10 main"><br>
-          <h1 class="page-header">Header 1</h1>
+    <div th:replace="templates\side_naviguation :: left-side-navigation"></div>
 
-<!-- END OF NAVIGATION MENUS -->
-            
-      <div>        
-        
 <!-- PAGE CONTENT STARTS HERE -->
+
+        <div class="col-sm-9 col-md-10 main"><br/>
+          <h1 class="page-header">Cardshifter template</h1>
+        <div>
         
       <div class="default-template csh-body">
         <h2>Header 2</h2>
@@ -201,23 +153,9 @@ consectetur.</p>
 <!-- END PAGE CONTENT -->          
 
 </div></div></div>
-<!-- FOOTER - DO NOT REMOVE -->
+</div></div></div>
 
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">&copy; Copyright <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script>, Cardshifter.</p>
-      </div>
-    </footer>
+<div th:replace="templates\footer :: footer"></div>
+<div th:replace="templates\scripts_loader :: scripts"></div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="index_files/jquery.js"></script>
-    <script src="index_files/bootstrap.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="index_files/ie10-viewport-bug-workaround.xml"></script>
-
-
-  
-
-</div></div></div></body></html>
+</body></html>
