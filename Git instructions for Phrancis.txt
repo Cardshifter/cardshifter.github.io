@@ -21,4 +21,8 @@ git push
 git checkout master
 git merge develop
 git push
-# 
+#
+# Sync local repo to remote
+git checkout develop #or whatever
+git pull
+#

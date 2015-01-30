@@ -1,0 +1,105 @@
+/* IDEA theme */
+.prettyprint {
+  background: white;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  font-size: 9pt;
+  line-height: 1.3;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+code {
+  background: white;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  font-size: 9pt;
+}
+/* Plain text */
+.pln {
+  color: black;
+}
+
+@media screen, print, projection {
+/* String content */
+  .str {
+    color: #009900;
+    font-weight: bold;
+  }
+/* Keyword */
+  .kwd {
+    color: #003399;
+    font-weight: bold;
+  }
+/* Comment */
+  .com {
+    color: #A3A3A3;
+    font-style: italic;
+  }
+/* Type name */
+  .typ {
+    color: black;
+  }
+/* Literal value */
+  .lit {
+    color: #0000FF;
+  }
+/* Punctuation */
+  .pun {
+    color: black;
+  }
+/* Lisp open bracket */
+  .opn {
+    color: #333333;
+  }
+/* Lisp close bracket */
+  .clo {
+    color: #333333;
+  }
+/* Mark-up tag name */
+  .tag {
+    color: #003399;
+    font-weight: bold;
+    background-color: #E3E3E3;
+  }
+/* Mark-up attribute name */
+  .atn {
+    color: #0000FF;
+    font-weight: bold;
+    background-color: #E3E3E3;
+  }
+/* Markup attribute value */
+  .atv {
+    color: #009900;
+    font-weight: bold;
+    background-color: #E3E3E3;
+  }
+/* Declaration */
+  .dec {
+    color: #333333;
+  }
+/* Variable name */
+  .var {
+    color: #8A008A;
+    font-style: italic;
+  }
+/* Function name */
+  .fun {
+    color: black;
+  }
+}
+
+/* Specify class="linenums" on a <pre> to get line numbering */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #B2B2B2;
+}
+
+/* IE indents via margin-left */
+ul.linenums li {
+/* use for special formatting using linenums */
+}
+
+/* Alternate shading for lines */
+ul.linenums li:nth-child(odd) {
+/* use for different formatting for every other linenum */
+}
