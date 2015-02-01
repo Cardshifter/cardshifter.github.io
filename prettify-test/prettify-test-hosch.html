@@ -1,0 +1,235 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <link rel="dns-prefetch" href="//ajax.googleapis.com" />
+
+  <title>Prettify VS white</title>
+
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700">
+  <link rel="stylesheet" href="color-themes-for-google-code-prettify-gh-pages/css/style.css">
+
+  <link rel="stylesheet" href="color-themes-for-google-code-prettify-gh-pages/css/themes/hosch.css">
+
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="color-themes-for-google-code-prettify/sitemap.xml" />
+  <link rel="canonical" href="color-themes-for-google-code-prettify-gh-pages/github/" />
+
+  <script src="color-themes-for-google-code-prettify-gh-pages/js/modernizr-2.5.3.min.js"></script>
+
+</head>
+<body style="margin-left: 15px;">
+<h2>Google Prettify Testing: Typical white setting</h2>
+
+<h3>Color Reference</h3>
+  <ul>
+    <li><code class="prettify pln ">Plain text</code></li>
+    <li><code class="prettify str">"String content"</code></li>
+    <li><code class="prettify kwd">Keyword</code></li>
+    <li><code class="prettify com">// Comment</code></li>
+    <li><code class="prettify typ">Type name</code></li>
+    <li><code class="prettify lit">Literal value 42</code></li>
+    <li><code class="prettify pun">Punctuation...</code></li>
+    <li><code class="prettify dec">Declaration</code></li>
+    <li><code class="prettify var">Variable name</code></li>
+    <li><code class="prettify fun">Function name</code></li>
+    <li>Lisp brackets <code class="opn">(( </code><code class="clo">))</code></li>
+    <li><code class="prettify tag">&lt;script </code><code class="prettify atn">type</code><code class="prettify tag">="</code><code class="prettify atv">text/javascript</code><code class="prettify tag">"&gt;</code></li>
+  </ul>
+<br />
+
+<h3>C#</h3>
+
+<pre class="prettyprint linenums lang-csharp lang-linq">
+// this is a comment
+public static class Evaluate
+{
+    public static string FizzBuzz(int start, int end)
+    {
+        return Enumerable.Range(start, (end - start) + 1)
+            .Select(FizzOrBuzz)
+            .Aggregate(String.Empty, (y, x) =&gt; String.Format("{0} {1}", y, x))
+            .Trim();
+    }
+
+    public static string FizzOrBuzz(int n)
+    {
+        if (n % 15 == 0) return "fizzbuzz";
+        if (n % 3 == 0) return "fizz";
+        if (n % 5 == 0) return "buzz";
+        return n.ToString();
+    }
+}
+</pre>
+
+<h3>HTML, CSS, JavaScript</h3>
+
+<pre class="prettyprint linenums lang-html lang-js lang-css">
+&lt;html&gt;&lt;body style="font-size: 12pt;"&gt;
+&lt;!-- this is a comment --&gt;
+&lt;script type="text/javascript"&gt;
+// another comment
+var myString = "Hello, World!";
+var myInt = 42;
+function helloWorld(world) {
+    for (i = 0; i &lt;= myInt; i++) {
+        alert(myString);
+    }
+}
+&lt;/script&gt;
+&lt;style&gt;
+    /* another comment */
+    p { color: pink }
+    b { color: blue }
+    u { color: "umber" }
+&lt;/style&gt;
+&lt;/body&gt;&lt;/html&gt;
+</pre>
+    
+<h3>Java</h3>
+
+<pre class="prettyprint linenums lang-java"> public class FizzBuzz {    // this is a comment
+    private static Stream&lt;String&gt; fizzBuzz(final int min, final int max) {
+        if (min &lt; 0) {
+            throw new IllegalArgumentException("min is negative: min = " + min);
+        }
+        if (min &gt; max) {
+            throw new IllegalArgumentException("min &gt; max: min = " + min + " / max = " + max);
+        }
+        return IntStream.rangeClosed(min, max)
+                .mapToObj(FizzBuzz::fizzBuzzify);
+    }
+
+    private static String fizzBuzzify(final int value) {
+        StringBuilder stringBuilder = new StringBuilder();
+        boolean toDefault = true;
+        if (value % 3 == 0) {
+            stringBuilder.append("Fizz");
+            toDefault = false;
+        }
+        if (value % 5 == 0) {
+            stringBuilder.append("Buzz");
+            toDefault = false;
+        }
+        return (toDefault) ? String.valueOf(value) : stringBuilder.toString();
+    }
+
+    public static void main(String[] args) {
+        fizzBuzz(1, 100).forEach(System.out::println);
+    }
+}
+</pre>
+
+<h3>Python</h3>
+
+<pre class="prettyprint linenums lang-python">
+# This is a comment
+def fizzbuzz(number):
+    if not number % 3:
+        if not number % 5:
+            return 'fizzbuzz'
+        else:
+            return 'fizz'
+    if not number % 5:
+        return 'buzz'
+    return number
+
+def main():
+    for i in range(1, 101):
+        print fizzbuzz(i)
+</pre>
+    
+<h3>SQL</h3>
+
+<pre class="prettyprint linenums lang-sql">
+CREATE TABLE foo (
+    Id INT NOT NULL,
+    Word VARCHAR(100)
+);
+DECLARE @var; /* this is a comment */
+SET @var = 'bar';
+INSERT INTO foo (Id, Word)  --also a comment
+    VALUES (1, @var);
+SELECT Id
+     , Word
+FROM foo
+WHERE Word IS NOT NULL;
+</pre>    
+
+<h3>Lisp</h3>
+
+<pre class="prettyprint linenums lang-lisp">
+(defun is-multiple (i against)
+  (= (mod i against) 0))
+(defun num-action (i)
+  (cond ((and (is-multiple i 3) (is-multiple i 5)) (print "FizzBuzz"))
+    ((is-multiple i 3) (print "Fizz"))
+    ((is-multiple i 5) (print "Buzz"))
+    (T (print i))))
+(dotimes (i 101) (num-action i))
+</pre>
+
+<h3>VBA</h3>
+
+<pre class="prettyprint linenums lang-vb">
+Option Explicit
+' This is a comment '
+Public Function Chop(target As Long, Arr() As Long, Optional midpoint As Long = -1) As Long
+    Dim result As Long
+    Dim currentTest As Long
+
+    If Not IsArrayAllocated(Arr) Then
+        Chop = -1
+        Exit Function
+    End If
+
+    If midpoint < 0 Then
+        midpoint = UBound(Arr) \ 2
+    End If
+
+    currentTest = Arr(midpoint)
+
+    If target = currentTest Then
+        result = midpoint
+    ElseIf midpoint = 0 Or (Arr(UBound(Arr)) < target) Then
+        result = -1
+    Else
+        If target > currentTest Then
+            midpoint = midpoint + (midpoint \ 2)
+            If midpoint > UBound(Arr) Then midpoint = UBound(Arr)
+        Else
+            midpoint = midpoint \ 2
+        End If
+
+        result = Chop(target, Arr, midpoint)
+    End If
+
+    Chop = result
+End Function
+
+Function IsArrayAllocated(Arr As Variant) As Boolean
+    On Error Resume Next
+    IsArrayAllocated = IsArray(Arr) And _
+                       Not IsError(LBound(Arr, 1)) And _
+                       LBound(Arr, 1) <= UBound(Arr, 1)
+End Function
+</pre>
+
+    <footer></footer>
+  <script src="//platform.twitter.com/widgets.js"></script>
+  <script src="//assets.pinterest.com/js/pinit.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/jquery-1.7.2.min.js"><\/script>')</script>
+  
+  <script src="color-themes-for-google-code-prettify-gh-pages/js/prettify.js"></script>
+  <script src="color-themes-for-google-code-prettify-gh-pages/js/lang-css.js"></script>
+  
+  <script src="color-themes-for-google-code-prettify-gh-pages/js/jquery.smooth-scroll.min.js"></script>
+  <script src="color-themes-for-google-code-prettify-gh-pages/js/script.min.js"></script>
+
+</body>
+</html>

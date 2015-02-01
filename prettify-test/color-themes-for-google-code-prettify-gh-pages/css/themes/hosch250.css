@@ -1,0 +1,95 @@
+/* Typical black theme */
+.prettyprint {
+  background-color: black;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  font-size: 9pt;
+  line-height: 1.3;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+code {
+  background: black;
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  font-size:9pt;
+}
+/* Plain text */
+.pln {
+  color: white;
+}
+
+@media screen, print, projection {
+/* String content */
+  .str {
+    color: #FF9933;
+  }
+/* Keyword */
+  .kwd {
+    color: #66A3FF;
+  }
+/* Comment */
+  .com {
+    color: #47B224;
+  }
+/* Type name */
+  .typ {
+    color: #52CCCC;
+  }
+/* Literal value */
+  .lit {
+    color: white;
+  }
+/* Punctuation */
+  .pun {
+    color: white;
+  }
+/* Lisp open bracket */
+  .opn {
+    color: #333333;
+  }
+/* Lisp close bracket */
+  .clo {
+    color: #333333;
+  }
+/* Mark-up tag name */
+  .tag {
+    color: #66A3FF;
+  }
+/* Mark-up attribute name */
+  .atn {
+    color: #99EBFF;
+  }
+/* Markup attribute value */
+  .atv {
+    color: #999999;
+  }
+/* Declaration */
+  .dec {
+    color: white;
+  }
+/* Variable name */
+  .var {
+    color: #999999;
+  }
+/* Function name */
+  .fun {
+    color: white;
+  }
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #666666;
+}
+
+/* IE indents via margin-left */
+ul.linenums li {
+/* use for special formatting using linenums */
+}
+
+/* Alternate shading for lines */
+ul.linenums li:nth-child(odd) {
+/* use for different formatting for every other linenum */
+}
