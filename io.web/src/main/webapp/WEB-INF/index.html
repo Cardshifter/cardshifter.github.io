@@ -15,7 +15,7 @@
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
-    <link href="cardshifter.css" rel="stylesheet" th:href="@{/css/cardshifter.css}"/>
+    <link href="cardshifter.css" rel="stylesheet" data-th-href="@{/css/cardshifter.css}"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -25,10 +25,10 @@
   </head>
 
   <body>
-    <div th:replace="templates\navbar_top :: navbar-top"></div>
+    <div data-th-replace="templates/navbar_top :: navbar-top"></div>
     <div class="container-fluid" >
       <div class="row">
-    <div th:replace="templates\side_naviguation :: left-side-navigation"></div>
+    <div data-th-replace="templates/side_naviguation :: left-side-navigation"></div>
 
         <div class="col-sm-9 col-md-10 main"><br/>
           <h1 class="page-header">Welcome to Cardshifter!</h1>
@@ -60,8 +60,8 @@
 
       </div>
 </div></div></div></div>
-<div th:replace="templates\footer :: footer"></div>
-<div th:replace="templates\scripts_loader :: scripts"></div>
+<div data-th-replace="templates/footer :: footer"></div>
+<div data-th-replace="templates/scripts_loader :: scripts"></div>
 
 
 
