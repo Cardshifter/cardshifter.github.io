@@ -15,7 +15,7 @@
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
-    <link href="cardshifter.css" rel="stylesheet" th:href="@{/css/cardshifter.css}"/>
+    <link href="cardshifter.css" rel="stylesheet" data-th-href="@{/css/cardshifter.css}"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -25,18 +25,18 @@
   </head>
 
   <body>
-    <div th:replace="templates\navbar_top :: navbar-top"></div>
+    <div data-th-replace="templates/navbar_top :: navbar-top"></div>
     <div class="container-fluid" >
-
       <div class="row">
-      <div th:replace="templates\side_naviguation :: left-side-navigation"></div>
+    <div data-th-replace="templates/side_naviguation :: left-side-navigation"></div>
 
-      <div class="col-sm-9 col-md-10 main">
+        <div class="col-sm-9 col-md-10 main"><br/>
+          <h1 class="page-header">Contribute</h1>
+        <div>
 
-        <h1 class="page-header">Contribute</h1>
 
-<!-- PAGE CONTENT STARTS HERE -->
-
+      <div class="default-template csh-body">
+      
       <p>The Cardshifter team is always open to welcoming new talent into the project! The following are some ways you can get involved.</p>
 
       <h2>Try the game!</h2>
@@ -59,14 +59,13 @@
 
       <p>You may use the links on the left navigation bar in order to contact us, report a bug or request a feature. You may also report a bug or request a feature by opening a new issue on <a href="https://github.com/Cardshifter/Cardshifter/issues" target="_blank">Github Issues page</a>.</p>
 
-<!-- END PAGE CONTENT -->
 
       </div>
-      </div></div>
-        <div th:replace="templates\footer :: footer"></div>
-        <div th:replace="templates\scripts_loader :: scripts"></div>
+</div></div></div></div>
+<div data-th-replace="templates/footer :: footer"></div>
+<div data-th-replace="templates/scripts_loader :: scripts"></div>
 
 
 
 
-        </body></html>
+</body></html>
