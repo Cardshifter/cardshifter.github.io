@@ -59,19 +59,4 @@ public class StaticController {
 		return "new-mod";
 	}
 	
-	@RequestMapping(value = "/contact-us",method = RequestMethod.GET)
-	public String ContactUs(Model model) {
-		return "contact-us";
-	}
-	
-	@RequestMapping(value = "/report-bug",method = RequestMethod.GET)
-	public String reportBug(Model model) {
-		return "report-bug";
-	}
-	
-	@RequestMapping(value = "/feature-request",method = RequestMethod.GET)
-	public String featureRequest(Model model) {
-		return "feature-request";
-	}
-	
 }
