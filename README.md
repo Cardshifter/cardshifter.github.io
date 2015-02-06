@@ -1,12 +1,10 @@
-
-cardshifter.github.io
-=======
+#cardshifter.github.io
 
 ######_Last revision: 2015-04-04_
 
 ## Cardshifter Website
 
-This repository is closely tied to the [Cardshifter](https://github.com/Cardshifter/Cardshifter) repository. Cardshifter is an open-source online Trading Card Game (TCG) using Java 8 and related technologies.
+This repository is closely tied to the [Cardshifter](https://github.com/Cardshifter/Cardshifter) repository. Cardshifter is an open-source online Trading Card Game using Java 8 and related technologies.
 
 The purpose of the website is to promote and inform about the project, and about its various modifications (mods). Please follow these guidelines if you wish to contribute.
 
@@ -31,7 +29,11 @@ The HTML and CSS source files are currently located in the following [sub-direct
 
 ##### HTML
 
-- Do not use HTML properties, especially for formatting, unless absolutely necessary. Use CSS instead.
+HTML source files must be located in the following [directory](https://github.com/Cardshifter/cardshifter.github.io/tree/master/io.web/src/main/webapp/WEB-INF):<br />
+
+`cardshifter.github.io/io.web/src/main/webapp/WEB-INF`
+
+- Do not use HTML properties, especially for formatting, unless absolutely necessary. Use CSS styles/classes instead.
 
 - Use spaces, rather than tabs, for indentation. Two spaces for small indentation (e.g., between `<div>` sections) and four spaces for large indentation (e.g. between large sections).
 
@@ -41,11 +43,13 @@ The HTML and CSS source files are currently located in the following [sub-direct
 
 - Place images in the `images` folder, and in the appropriate sub-folder (e.g., `screenshots`, `logos`, etc.)
 
-- Sub-sites for mods should be isolated in their own folder, with same folder structure as the primary Cardshifter structure.
-
-- Using hyphens `-` in file names. Do not use spaces or underscores.
+- Using hyphens `-` in file names, e.g., `this-file.html`. Do not use spaces or underscores.
 
 ##### CSS
+
+CSS files must be located in the following [directory](https://github.com/Cardshifter/cardshifter.github.io/tree/web-content/io.web/src/main/webapp/css):<br />
+
+`cardshifter.github.io/io.web/src/main/webapp/css`
 
 - Use CSS 3 features as much as possible, for compatibility with future versions of major browsers.
 
@@ -54,8 +58,6 @@ The HTML and CSS source files are currently located in the following [sub-direct
 - Prefix all classes in `cardshifter.css` with `csh-` so they can be more easily identified as a local CSS class, rather than a Bootstrap CSS class.
 
 ##Guidelines for images
-
-
 
 Make sure to save images in the appropriate sub-folder. Do not save any images in the main `images/` folder. 
 
@@ -91,3 +93,4 @@ Make sure to save images in the appropriate sub-folder. Do not save any images i
 
 - Simply use the card name for naming purposes, e.g.: `heavy-mech.svg`
 
+- Use CSS styles `<img src="foo.png" style="width: 100px; height: 100px" />` rather than HTML attributes `<img src="foo.png" height="100px" width="100px" />` to change image display properties.
