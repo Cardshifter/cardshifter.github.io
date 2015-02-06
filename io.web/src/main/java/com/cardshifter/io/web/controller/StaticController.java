@@ -34,9 +34,9 @@ public class StaticController {
 		return "contributors";
 	}
 	
-	@RequestMapping(value = "/images",method = RequestMethod.GET)
-	public String images(Model model) {
-		return "images";
+	@RequestMapping(value = "/screenshots",method = RequestMethod.GET)
+	public String screenshots(Model model) {
+		return "screenshots";
 	}
 	
 	@RequestMapping(value = "/contribute",method = RequestMethod.GET)
