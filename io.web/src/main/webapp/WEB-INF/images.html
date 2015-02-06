@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html class="" lang="en"><!-- MAKE NO CHANGE TO ANYTHING IN THE <head> </head> SECTION --><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Cardshifter card game / TCG, open source github with Java 8 &amp; JavaFX">
-    <meta name="author" content="github.com/Phrancis">
-    <link rel="icon" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/favicon.ico">
+<html class="" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Cardshifter card game / TCG, open source github with Java 8 &amp; JavaFX"/>
+    <meta name="author" content="github.com/Phrancis"/>
+    <link rel="icon" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/favicon.ico"/>
 
     <title>Cardshifter</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
-    <link href="cardshifter.css" rel="stylesheet">
+    <link href="cardshifter.css" rel="stylesheet" data-th-href="@{/css/cardshifter.css}"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -24,103 +25,39 @@
   </head>
 
   <body>
-
-<!-- THIS CODE GENERATES THE NAVIGATION MENUS; DO NOT CHANGE IT -->      
-      
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
- <!-- RIGHT SIDE DROP-DOWN MENU NOT NEEDED RIGHT NOW
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
--->
-          <a class="navbar-brand csh-top-link" href="index.html">Cardshifter</a>
-
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="csh-twitter-top-bar nav navbar-nav">
-              <li>
-                  <img src="images/logos/Twitter_logo_blue.png" class="twitter-logo">
-              </li>
-              <li>
-                  <a href="https://twitter.com/Cardshifter" class="navbar-brand csh-top-link" style="font-size: 1.4em; margin-top: 2px;">@Cardshifter</a>
-              </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-    </nav>
-      
-    <div class="container-fluid">
+    <div data-th-replace="templates/navbar_top :: navbar-top"></div>
+    <div class="container-fluid" >
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar csh-nav-background csh-nav-padding">
-          <ul class="nav nav-sidebar">
-            <h4><a class="csh-nav-link" href="index.html">Home</a></h4>
-            <h4><a class="csh-nav-link" href="play-cardshifter.html">Play Cardshifter!</a></h4>
-            <h4><a class="csh-nav-link" href="news.html">News</a></h4>
-            <h5><a class="csh-nav-link" href="https://github.com/Cardshifter/Cardshifter/releases" target="_blank">Latest Release</a></h5>
-            <h5><a class="csh-nav-link" href="https://github.com/Cardshifter/Cardshifter/issues" target="_blank">New Git issues</a></h5>
-            <h4><a class="csh-nav-link" href="project.html">Project</a></h4>
-            <h5><a class="csh-nav-link" href="contributors.html">Contributors</a></h5>
-            <h5><a class="csh-nav-link" href="images.html">Images</a></h5>
-            <h5><a class="csh-nav-link" href="https://github.com/Cardshifter/Cardshifter/wiki" target="_blank">Wiki</a></h5>
-            <h5><a class="csh-nav-link" href="contribute.html">Contribute!</a></h5>
-            <h4><a class="csh-nav-link" href="mods.html">Mods</a></h4>
-            <h5><a class="csh-nav-link" href="cyborg-chronicles.html">Cyborg Chronicles</a></h5>
-            <h5><a class="csh-nav-link" href="new-mod.html">Start a New Mod!</a></h5>
-            <h4><a class="csh-nav-link" href="contact-us.html">Contact Us</a></h4>
-            <h5><a class="csh-nav-link" href="report-bug.html">Report a bug</a></h5>
-            <h5><a class="csh-nav-link" href="request-feature.html">Request a feature</a></h5>
-            <h5><a class="csh-nav-link" href="http://chat.stackexchange.com/rooms/16134/tcg-creation" target="_blank">Chat room</a></h5>
-          </ul>
-        </div>
-        <div class="col-sm-9 col-md-10 main"><br>
+    <div data-th-replace="templates/side_naviguation :: left-side-navigation"></div>
+
+        <div class="col-sm-9 col-md-10 main"><br/>
           <h1 class="page-header">Images</h1>
+        <div>
 
-<!-- END OF NAVIGATION MENUS -->
-            
-      <div>        
-        
-<!-- PAGE CONTENT STARTS HERE -->
-        
+
       <div class="default-template csh-body">
-
-          <p>Here you will find some images including screen captures of the Cardshifter game.</p>
-          
-        <div class="col-sm-4">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Login screen</h3>
-            </div>
-            <div class="panel-body">
-              <img src="/images/screenshots/csh4-0-login.png" class="img-thumbnail" alt="Login screen">
-            </div>
-          </div>
-        </div>
-
-<!-- END PAGE CONTENT -->          
-
+       <p>This page will showcase some of the screens you will encounter while playing the Cardshifter trading card game.</p>
+       <h3>Login screen</h3> 
+        <p>When you start the game this is the first screen you encounter. Simply choose a user name, enter the server information and click Connect to enter the lobby. You may also simply start a local practice game by selecting <strong>Start Local Game</strong>.</p>
+        <img src="images/screenshots/0.4-login.png" alt="Screenshots" />
+        
+        <h3>Lobby</h3>
+        <p>After connecting, you will see all players who are connected to the server, as well as a few AI players you can play with for practice. You can chat with other players in the lobby's chat room. You can also access the Deck Builder. To start a game, select a player or AI, select a game type, and click <strong>Invite To Game</strong>.</p>
+        <img src="images/screenshots/0.4-lobby.png" alt="Lobby" />
+      	
+      	<h3>Deck Builder</h3>
+      	<p>This screen displays all the available cards for you to choose, as well as any saved decks you have. You can choose up to 3 cards of each type per deck, for a total of 30 cards per deck. Use the Prev and Next buttons to scroll through the card library. To add a card, simply click it. To remove from deck, click the card in the Active Deck section. Once your deck is completed, give it a name and click <strong>Save Deck</strong>. You may load saved decks by selecting it on the right and clicking <strong>Load Deck</strong>. Once you have a deck created, you're ready to start a game!</p>
+      	<img src="images/screenshots/0.4-deck-builder.png" alt="Deck Builder" />
+      	
+      	<h3>Game scene</h3>
+      	<p>This is where the action happens! The cards in your hand are displayed at the bottom, and your and your opponent's cards in play are displayed in the blue and red sections, respectively. The legend at the top will help you see what you can do each turn. On the right you will see your and your opponent's health and resources, and cards remaining in each deck. Once either player's health reaches 0, the game is over. The right side has server messages for developers that are not useful to the player, and will be removed in a future release. Enjoy!</p>
+      	<img src="images/screenshots/0.4-game.png" alt="Game" />
       </div>
-
-<!-- FOOTER - DO NOT REMOVE -->
-
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">&copy; Copyright <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script>, Cardshifter.</p>
-      </div>
-    </footer>
+</div></div></div></div>
+<div data-th-replace="templates/footer :: footer"></div>
+<div data-th-replace="templates/scripts_loader :: scripts"></div>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="index_files/jquery.js"></script>
-    <script src="index_files/bootstrap.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="index_files/ie10-viewport-bug-workaround.xml"></script>
 
 
-  
-
-</div></div></div></body></html>
+</body></html>

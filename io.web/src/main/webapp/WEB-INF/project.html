@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html class="" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="Cardshifter card game / TCG, open source github with Java 8 &amp; JavaFX"/>
+    <meta name="author" content="github.com/Phrancis"/>
+    <link rel="icon" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/favicon.ico"/>
+
+    <title>Cardshifter</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom styles for this template -->
+    <link href="cardshifter.css" rel="stylesheet" data-th-href="@{/css/cardshifter.css}"/>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div data-th-replace="templates/navbar_top :: navbar-top"></div>
+    <div class="container-fluid" >
+      <div class="row">
+    <div data-th-replace="templates/side_naviguation :: left-side-navigation"></div>
+
+        <div class="col-sm-9 col-md-10 main"><br/>
+          <h1 class="page-header">Project</h1>
+        <div>
+
+
+      <div class="default-template csh-body">
+      
+        <p>Cardshifter is an open-source Trading Card Game <i>(TCG)</i> project which began in August 2014. It is being developed by a team of dedicated software programmers, web developers and designers. This page will go over some of the tools and technologies that we employ.</p>
+        <h2>Git, Github</h2>
+        <p>The <a href="https://github.com/Cardshifter" target="blank">Cardshifter Github repository</a> is the central hub where all the code and files are stored. It is a vastly valuable tool in facilitating teamwork, version control, and just generally keeping things organized. Should you decide to become a contributor to the Cardshifter project as a programmer, this is where your journey will begin.</p>
+        <h3>Github links:</h3>
+            <ul>
+              <li><a href="https://github.com/Cardshifter/Cardshifter">Java repository</a></li>
+                <li><ul>
+                  <li><a href="https://github.com/Cardshifter/Cardshifter/wiki">Wiki</a></li>
+                  <li><a href="https://github.com/Cardshifter/Cardshifter/issues">Issues</a></li>
+                  <li><a href="https://github.com/Cardshifter/Cardshifter/network">Network graph</a></li>
+                  <li><a href="https://waffle.io/#!/Cardshifter/Cardshifter">Waffle issue tracker</a></li>
+                </ul></li>
+              <li><a href="https://github.com/Cardshifter/cardshifter.github.io">Website repository</a></li>
+              <li><a href="https://github.com/Cardshifter/Graphics">Graphics repository</a></li>
+            </ul>
+
+
+        <h2>Core Development Technologies</h2>
+        
+        <ul>
+        <!-- Java 8 -->
+        <li><h3><a href="http://www.oracle.com/technetwork/java/javase/overview/java8-2100321.html">Java 8</a></h3></li>
+
+        <!-- JavaFX -->
+        
+        <li><h3><a href="http://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784">JavaFX</a></h3></li>
+        
+        <!-- libGDX -->
+        <li><h3><a href="http://libgdx.badlogicgames.com/">libGDX</a></h3></li>
+        
+        <!-- ECS -->
+        <li><h3><a href="http://en.wikipedia.org/wiki/Entity_component_system">Entity Component System</a></h3></li>
+        </ul>
+        
+        <h2>Bootstrap CSS</h2>
+        <p>This website is built in part using the <a href="http://getbootstrap.com/css/">Bootstrap CSS</a> library, which makes it easy and fast to make professional-looking websites. Special thanks to <a href="https://www.maxcdn.com/">MaxCDN</a> for hosting the Bootstrap CSS library used for this site. If you wish to use it for your site, you may add the following into the <code>&lt;head&gt;</code> of your website:</p>
+
+        <pre>&lt;!-- Bootstrap core CSS --&gt;<br/>&lt;link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"&gt;</pre>
+
+        <h2>PostgreSQL</h2>
+        <p>Cardshifter will be using a normalized <a href="http://www.postgresql.org/">PostgreSQL</a> relational database in order to gather a plethora of game statistics which will be displayed both in-game and available on the web. That way, players can keep track of their performance in each mod, and with each version of their decks, to see how they rank against other players.</p>
+
+        
+        
+        
+      </div>
+</div></div></div></div>
+<div data-th-replace="templates/footer :: footer"></div>
+<div data-th-replace="templates/scripts_loader :: scripts"></div>
+
+
+
+
+</body></html>
