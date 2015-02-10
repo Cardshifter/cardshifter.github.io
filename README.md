@@ -1,4 +1,6 @@
-#cardshifter.github.io
+
+cardshifter.github.io
+=======
 
 ######_Last revision: 2015-04-04_
 
@@ -88,5 +90,3 @@ Make sure to save images in the appropriate sub-folder. Do not save any images i
 - These will normally be SVG vector images, as they will be drawn and colored by artist contributors. If an image contains mostly photographic/rasterized content, use JPG instead. 
 
 - Simply use the card name for naming purposes, e.g.: `heavy-mech.svg`
-
->>>>>>> web-content
