@@ -102,13 +102,13 @@ p, span, table {
 }
 
 pre {
-    font-family: Monaco, Consolas, "Courier New", monospace;
+    font-family: Consolas, Monaco, "Courier New", monospace;
     font-size: 1.1em;
     font-weight: normal;
 }
 
 code {
-    font-family: Monaco, Consolas, "Courier New", monospace;
+    font-family: Consolas, Monaco, "Courier New", monospace;
     font-size: 1.1em;
     color: #336699;
     background-color: #EEEEEE;
