@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <html class="" lang="en">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="Cardshifter card game / TCG, open source github with Java 8 &amp; JavaFX"/>
-    <meta name="author" content="github.com/Phrancis"/>
-    <link rel="icon" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/favicon.ico"/>
 
-    <title>Cardshifter</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"/>
-
-    <!-- Custom styles for this template -->
-    <link href="cardshifter.css" rel="stylesheet" data-th-href="@{/css/cardshifter.css}"/>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+  <div data-th-replace="templates/header :: header"></div>
 
   <body>
     <div data-th-replace="templates/navbar_top :: navbar-top"></div>
@@ -37,9 +16,33 @@
 
       <div class="default-template csh-body">
       
-        <p>This page is under construction.</p>
+        <p>The Cradshifter team strives to make the game not only fun and interesting, but also easy to use and compatible 
+        on many platforms. This page will guide you through a few simple steps to set up the game and start playing 
+        Cardshifter today!</p>
         
+        <h3>Java version</h3>
         
+        <p>You will need Java 8 or above to be able to play Cardshifter. Java 8 by Oracle is completely free and works 
+        on all modern operating systems.</p>
+        <p>Java 8 is the official Java version since October 2014. If you are unsure of your Java version, you can 
+        visit <a href="http://www.java.com/en/download/installed.jsp">this link</a> to find out. If you do not have 
+        Java 8, you can download it for free from the same website.</p>
+        
+        <h3>Get the latest release</h3>
+        
+        <p>You will first need to download the <a href="https://github.com/Cardshifter/Cardshifter/releases">latest 
+        release</a> in order to play Cardshifter. Once you have saved it to your computer, you can either open the terminal
+        and run <code>java -jar cardshifter-fx-&lt;version&gt;.jar</code> or you can simply double-click the 
+        <i>cardshifter-fx-&lt;version&gt;.jar</i> file.</p>
+        
+        <h3>Connect and play!</h3>
+        <p>There is a server running at <code>dwarftowers.com | port  4242</code> that you may connect to and play with 
+        other players as well as AI players. Just choose your user name and connect to enter the lobby. If this is your 
+        first time playing Cardshifter, you may want to read the 
+        <a href="https://github.com/Cardshifter/Cardshifter/wiki/Game-Rules">Game Rules</a>.</p>
+        <p>Once you are in the lobby, you can select the Deck Builder to build and save your own deck, or just invite a player 
+        or AI to a game, which will bring up the Deck builder where you can load an existing deck or create a new one. 
+        Then just select Start Game and enjoy!</p>
         
       </div>
 </div></div></div></div>

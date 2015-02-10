@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <html class="" lang="en">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="Cardshifter card game / TCG, open source github with Java 8 &amp; JavaFX"/>
-    <meta name="author" content="github.com/Phrancis"/>
-    <link rel="icon" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/favicon.ico"/>
 
-    <title>Cardshifter</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"/>
-
-    <!-- Custom styles for this template -->
-    <link href="cardshifter.css" rel="stylesheet" data-th-href="@{/css/cardshifter.css}"/>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+  <div data-th-replace="templates/header :: header"></div>
 
   <body>
     <div data-th-replace="templates/navbar_top :: navbar-top"></div>
@@ -33,11 +12,20 @@
         <div class="col-sm-9 col-md-10 main"><br/>
           <h1 class="page-header">Mods</h1>
         <div>
-
-
       <div class="default-template csh-body">
       
-        <p>This page is under construction.</p>
+        <p>From day one, the Cardshifter team has elevated moddability as one of the most important features we want to
+        implement. If you have been into online gaming for any amount of time, you have no doubt seen modifications of
+        a game made by players, using the same engine but with totally new gameplay. You, as a Cardshifter enthusiast,
+        can enjoy the same type of flexibility, by either playing one of the mods, or even 
+        <a data-th-href="@{/new-mod}">create your own mod!</a></p>
+        
+        <h2>Existing mods</h2>
+        
+        <h3><a data-th-href="@{cyborg-chronicles}">Cyborg Chronicles</a></h3>
+        
+        <p>Cybernetically-enhanced humans, battle Mechs, governments, corporations and aliens battle it out for the 
+        future of Earth in this dystopian, cyberpunk themed mod!</p>
         
         
         

@@ -1,28 +1,7 @@
 <!DOCTYPE html>
 <html class="" lang="en">
-<head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="description" content="Cardshifter card game / TCG, open source github with Java 8 &amp; JavaFX"/>
-    <meta name="author" content="github.com/Phrancis"/>
-    <link rel="icon" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/favicon.ico"/>
 
-    <title>Cardshifter</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"/>
-
-    <!-- Custom styles for this template -->
-    <link href="cardshifter.css" rel="stylesheet" data-th-href="@{/css/cardshifter.css}"/>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+  <div data-th-replace="templates/header :: header"></div>
 
   <body>
     <div data-th-replace="templates/navbar_top :: navbar-top"></div>
@@ -36,8 +15,33 @@
 
 
       <div class="default-template csh-body">
-      
-        <p>This page is under construction.</p>
+
+        <!-- EXAMPLE ARTICLE -->
+        <article class="csh-article">
+          <header>
+            <h2 class="csh-article">An article title</h2>
+            <p class="csh-article-header">Published: <time datetime="2015-02-06T14:30">2015-02-06</time></p>
+          </header>
+          <section class="csh-article">
+            <h3 class="csh-article">Summary</h3>
+            <p class="csh-article-content">Lorem ipsum dolor sit amet, ut nihil corrumpit appellantur eum, usu diam <a href="foo.html" class="csh-article">dolore 
+            efficiendi</a> an, at labores hendrerit usu! His cetero inimicus no, solum cetero iudicabit at pri. Pro malis nonumy 
+            nominati ex, ex hinc ullum mel. Eirmod mentitum <strong>legendos per ne</strong>, ex sumo veri cum. Ne saperet expetendis vix, 
+            nec quis argumentum id. Ex ius regione singulis consetetur, percipit fabellas periculis vel ad.
+            </p>
+          </section>
+          <section class="csh-article">
+            <h3 class="csh-article">New features</h3>
+            <ul class="csh-article-list">
+              <li>An eripuit deseruisse</li>
+              <li>Nam ei quas nominati, melius aliquip aperiri cu vim</li>
+              <li>Nonumes consequat no nec, albucius <code>sensibus hendrerit</code> ea usu.</li>
+            </ul>
+          </section>
+          <footer class="csh-article">
+            <p class="csh-article-footer">Published by Cardshifter dev team</p>
+          </footer>
+        </article>
         
         
         
@@ -46,8 +50,4 @@
 <div data-th-replace="templates/footer :: footer"></div>
 <div data-th-replace="templates/scripts_loader :: scripts"></div>
 
-
-
-
 </body></html>
-
