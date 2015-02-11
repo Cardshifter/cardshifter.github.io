@@ -18,36 +18,42 @@ The aliens destroy lots of the cities on Earth and cause terrible devastation.  
 
 This is where the game begins. The outcasts are under increasingly violent attacks from both the governement and the aliens, so they have to augment their bodies with cybernetics to fight them. The government invents new and more destructive robot armies, trying to protect the remaining undestroyed cities.  And the aliens continue to attack and expand, using our technology against us to defeat us.
 
-####Factions
+###Factions
 
-Proposed by @Jay1148 [in chat](http://chat.stackexchange.com/transcript/message/17281046#17281046) on 2014-08-22, in regards to possible groups/factions:
+There are 6 factions which have been proposed for the plot of Cyborg Chronicles. They are presented roughly in the order they would appear in the plot. The game player finds themselves controllingone of the factions after the 6 factions are introduced into the story. 
 
-######The Celescion:
-An ancient alien race that came to earth to save it. After the wars were over, the Celescion took over a good portion of the planet, inhabiting it and building cities on top of the rubble to allow the human race and any other forms of life that came to the planet an escape from the aftermath of the bioweapons that engulfed much of the world.
+####Planet Corp.
 
-######Tyrakk:
-Alien race that has come to seek sanctuary on earth due to a virus that broke out on their planet. They are mostly scavengers, and although not very violent, they can be very vicious if they feel threatened.
+A massive corporation that focuses on defense and military technology. Their wealthy leaders hide behind armies of Mechs, and have created a worldwide virtual communication network, called "The Plane", to which all their machines and systems are connected. They also manufacture communication devices and implants for humans to connect to The Plane. 
 
-######Planet Corp.:
-A military-like institution that still governs part of the world. Mainly made up what is left from the various governments and their respective military forces. They are involved in a peace treaty with the Celescion, but still believe that Earth should be left up to what is left of the human race to govern. They feel that we could have saved ourselves and did not need the help of the Celescion. 
+Planet Corp., as their name implies, also explore other planets to exploit resources for their Earth operations. The corporation's influence in politics is very deep and they are generally hated and criticized for their lobbying of Earth governments.
 
-######M.B.W.P. (Machines Built With Purpose):
-A company within Planet Corp. that produces robots and machines with the duty of keeping the planet alive and running. There is quite a variety of products that come from this company, with a variety of responsibilities. 
+####Blackout *(f.k.a. "Go Home")*
 
-######Go Home:
-A resistance group full of activists and extremists that have waged war against all extra-terrestrial life. They are not in any way affiliated with Planet Corp.
+This group of rebels are in strong opposition to the dominance of Planet Corp. They fight for the scarce natural resources to be shared with the population in order to reduce crime, famine and disease among the middle and lower classes. 
 
-######BioGhosts:
-These are spiritual entities that were a result from the bioweapons brought by the Celescion. Once humans, these beings roam the outer lands and cause havoc with machines and robots.
+They organize protests against Planet Corp., often involving violence, and will sometimes even use industrial espionage and cybercrime on The Plane to harm their foes. They are very proficient in cybernetics to enhance their soldiers.
 
-####More ideas for factions
+####Earth Survival Union (ESU) *(f.k.a. M.B.W.P.)*
 
-As posted by @bazola [in chat](http://chat.stackexchange.com/transcript/message/17290601#17290601) on 2014-08-22:
+The ESU is composed of political lobbyists, wealthy investors and scientists who are fighting to preserve Earth's viability for humans to inhabit. They research and manufacture Mechs that help with reducing crime, diminishing pollution, preserving resources and generating clean energy.
 
-I was thinking, what if the Celescion were a group of intelligent robots built by an advanced alien race that almost completely died out long ago. They are programmed to protect life in all forms. They crash land on earth, out of resources and fuel, and find a devastated wasteland. So they set about rebuilding where they can and making a safe haven for anyone who wants to live there. 
+They strongly oppose both of Planet Corp. and Blackout for ethical reasons, and ESU's private security corps sometimes have to engage in combat to defend the Union against opposing factions. 
 
-The only catch is, you aren't allowed to kill anything, not even insects, or they kick you out. Bacteria are except from this, but only for practical reasons, otherwise they wouldn't let you kill those either. 
+####Tyrakk
 
-And I was thinking the overall story would be that the first, more vicious aliens land on earth and start destroying things, and the governments of the world fight them as hard as they can with their tanks and armies of robots, but in the end both sides are mostly destroyed. So those government leaders abandon everyone else and hide in bunkers and highly advanced arcologies with the other rich elites who were able to survive.
+The Tyrakk are an alien race from a neighboring star cluster. They thrive on military conquest and will not hesitate to enslave and even commit genocide to seize a planet and its resources. 
 
-What we still need to answer in a way is, who is the player in all of this? what does the player represent? vogel made that point a while ago and I think it is a good one. In MTG you are a planes walker moving between crazy dimensions, and in Hearthstone you are a world of warcraft hero. Not sure what you are in YGO. so we need to have something like that too i think, or at least it would be nice.
+The Tyrakk and Planet Corp. have often found themselves fighting each other over planet resources, much to those planets' detriment. To eliminate competition, the Tyrakk have decided that Earth will be their next conquest.
+
+####Celescion
+
+The Celescion are one of the oldest civilizations in the galaxy. Their technology is astoundingly advanced to the point it would appear as magic to humans. They have mastered the manipulation of matter and energy and are generally peaceful. They have been observing the conflicts involving humans and Tyrakk.
+
+For the greater good of the galaxy, they have decided to get involved in mitigating the conflict. After unsuccessful attempts at negotiations, the Celescion set up a military base of operations of Earth's moon. They also injected a very powerful AI into The Plane, the *Bio-Replicating Artificial Intelligence*, or "BRAIN", to intercept communications and interfere with Mechs.
+
+####BioShell
+
+After BRAIN effectively infected The Plane, something went terribly wrong: BRAIN overrode its own programming and became self-aware. BRAIN began completely overtaking Mechs and even humans, making them slaves to its bidding. 
+
+These it named BioShells, and it uses them via The Plane to attack all factions and attempt to effectively become overlord of the Earth. BioShells are a living part of The Plane, with their bodies rendered mostly useless except to increase BRAIN's power and reach. 
