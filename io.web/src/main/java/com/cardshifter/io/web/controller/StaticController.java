@@ -49,11 +49,11 @@ public class StaticController {
 		return "mods";
 	}
 	
-	@RequestMapping(value = "/cyborg-chronicles",method = RequestMethod.GET)
-	public String cyborgChronicles(Model model) {
-		return "cyborg-chronicles";
-	}
-	
+//	@RequestMapping(value = "/cyborg-chronicles",method = RequestMethod.GET)
+//	public String cyborgChronicles(Model model) {
+//		return "cyborg-chronicles";
+//	}
+//	
 	@RequestMapping(value = "/new-mod",method = RequestMethod.GET)
 	public String newMod(Model model) {
 		return "new-mod";
