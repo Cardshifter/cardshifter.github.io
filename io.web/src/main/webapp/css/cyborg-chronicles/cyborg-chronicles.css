@@ -1,14 +1,20 @@
 body {
     font-size: 120%;
     font-family: Verdana, Geneva, sans-serif;
+    background-color: #2E2E2E;
+    color: #BDBDBD;
 }
 
 /* FORMATTING FOR TOP NAV BAR */
 
+nav.csh-cyborg {
+	background-color: #000000;
+}
+
 a.csh-top-link {
-    font-family: Georgia, Times, "Times New Roman", serif;
+    font-family: Consolas, Monaco, "Courier New", monospace;
     color: #FFFFFF;
-    font-size: 2em;
+    font-size: 1.6em;
 }
 
 .csh-twitter-top-bar {
@@ -32,23 +38,33 @@ img.twitter-logo {
 
 /* h4 and h5 are used for left nav bar links */
 
+
+
 h4 {
     font-size: 1.2em;
     font-weight: bold;
+    padding-top: 0px;
 }
 
 h5 {
     font-size: 1.1em;
     font-weight: normal;
     padding-left: 15px;
+    padding-top: 0px;
 }
 
 a.csh-nav-link {
-    color: #000000;
+    color: #BDBDBD;
+    font-family: Consolas, Monaco, "Courier New", monospace;
+    padding-top: 0px;
+}
+
+a.csh-nav-main {
+	color: #31B404;
 }
 
 div.csh-nav-background {
-    background-color: #EEEEEE;
+    background-color: #000000;
 }
 
 div.csh-nav-padding {
@@ -90,10 +106,12 @@ body {
 
 h1, h2, h3, blockquote {
     font-family: Georgia, Times, "Times New Roman", serif;
+    color: #EEEEEE;
 }
 
 h1 {
     padding-top: 15px;
+    font-family: Consolas, Monaco, "Courier New", monospace;
 }
 
 p, span, table {
@@ -101,21 +119,30 @@ p, span, table {
     font-weight: normal;
 }
 
+a {
+	color: #0174DF;
+}
+
 pre {
     font-family: Consolas, Monaco, "Courier New", monospace;
     font-size: 1.1em;
     font-weight: normal;
+    color: #31B404;
+    background-color: #000000;
+    border-width: 0;
 }
 
 code {
     font-family: Consolas, Monaco, "Courier New", monospace;
     font-size: 1.1em;
-    color: #336699;
-    background-color: #EEEEEE;
+    color: #31B404;
+    background-color: #000000;
 }
 
 blockquote {
     font-size: 1.4em;
+    color: #BDBDBD;
+    font-size: 1.2em;
 }
 
 div.copyright {
