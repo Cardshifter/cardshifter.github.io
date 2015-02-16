@@ -21,4 +21,11 @@ public class SubSiteController {
 		return subSite + "/story";
 	}
 
+	@RequestMapping(value = "/game-rules", method = RequestMethod.GET)
+	public String gameRules(Model model, @PathVariable("subSite") String subSite) {
+		model.addAttribute("subSite", subSite);
+		return subSite + "/game-rules";
+	}
+	
+	
 }
