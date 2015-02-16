@@ -23,7 +23,9 @@ git merge develop
 git push
 #
 # Sync local repo to remote
-git checkout develop #or whatever
+git checkout <branch-name>
 git pull
 #
-#
+# Delete local branches after deleting on remote
+git remote prune origin
+git branch -d <branch-name>
