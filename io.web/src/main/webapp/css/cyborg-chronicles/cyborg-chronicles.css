@@ -43,20 +43,17 @@ img.twitter-logo {
 h4 {
     font-size: 1.2em;
     font-weight: bold;
-    padding-top: 0px;
 }
 
 h5 {
     font-size: 1.1em;
     font-weight: normal;
     padding-left: 15px;
-    padding-top: 0px;
 }
 
 a.csh-nav-link {
     color: #BDBDBD;
     font-family: Consolas, Monaco, "Courier New", monospace;
-    padding-top: 0px;
 }
 
 a.csh-nav-main {
