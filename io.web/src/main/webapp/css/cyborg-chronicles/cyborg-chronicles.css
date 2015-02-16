@@ -2,7 +2,7 @@ body {
     font-size: 120%;
     font-family: Verdana, Geneva, sans-serif;
     background-color: #2E2E2E;
-    color: #BDBDBD;
+    color: #BCBCBC;
 }
 
 /* FORMATTING FOR TOP NAV BAR */
@@ -109,6 +109,7 @@ h1, h2, h3, blockquote {
 h1 {
     padding-top: 15px;
     font-family: Consolas, Monaco, "Courier New", monospace;
+    color: #31B404;
 }
 
 p, span, table {
