@@ -36,19 +36,25 @@ img.twitter-logo {
 
 /* FORMATTING FOR LEFT SIDE NAV MENU */
 
-/* h4 and h5 are used for left nav bar links */
-
-
-
-h4 {
-    font-size: 1.2em;
-    font-weight: bold;
+div.csh-nav-width {
+    width: 20%
 }
 
-h5 {
-    font-size: 1.1em;
+div.csh-left-menu-main {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-top: 3px;
+    color: #31B404;
+    margin: 0px;
+}
+
+div.csh-left-menu-sub {
+    font-size: 1.2em;
     font-weight: normal;
     padding-left: 15px;
+    padding-top: 3px;
+    color: #000000;
+    margin: 0px;
 }
 
 a.csh-nav-link {
@@ -198,11 +204,6 @@ ul.csh-article-list,
 ol.csh-article-list {
     font-size: 1.2em;
 }
-
-
-
-
-
 
 /* FORMATTING FOR TABLES */
 
