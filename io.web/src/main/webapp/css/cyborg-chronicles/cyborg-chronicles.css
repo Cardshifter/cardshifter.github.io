@@ -126,6 +126,9 @@ p, span, table {
 a {
 	color: #0174DF;
 }
+a.csh-bypass-link-color {
+	color: #EEEEEE;
+}
 
 pre {
     font-family: Consolas, Monaco, "Courier New", monospace;
