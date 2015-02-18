@@ -106,4 +106,10 @@ public class SubSiteController {
 		model.addAttribute("subSite", subSite);
 		return subSite + "/story-enter";
 	}
+	// template link for reference only
+		@RequestMapping(value = "/page-template", method = RequestMethod.GET)
+	public String pageTemplate(Model model, @PathVariable("subSite") String subSite) {
+		model.addAttribute("subSite", subSite);
+		return subSite + "/page-template";
+	}
 }
