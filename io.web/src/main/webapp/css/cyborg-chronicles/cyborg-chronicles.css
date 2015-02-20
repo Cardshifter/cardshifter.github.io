@@ -118,13 +118,16 @@ h1 {
     color: #31B404;
 }
 
-p, span, table {
+p, span, table, ul {
     font-size: 1.2em;
     font-weight: normal;
 }
 
 a {
 	color: #0174DF;
+}
+a.csh-bypass-link-color {
+	color: #EEEEEE;
 }
 
 pre {
