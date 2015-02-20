@@ -109,7 +109,7 @@ h1 {
     padding-top: 15px;
 }
 
-p, span, table {
+p, span, table, ul, ol {
     font-size: 1.2em;
     font-weight: normal;
 }
