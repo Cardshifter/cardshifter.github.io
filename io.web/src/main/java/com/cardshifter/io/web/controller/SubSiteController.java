@@ -37,10 +37,10 @@ public class SubSiteController {
 		model.addAttribute("subSite", subSite);
 		return subSite + "/cards-mech";
 	}
-	@RequestMapping(value = "/cards-cybernetics", method = RequestMethod.GET)
-	public String cardsCybernetics(Model model, @PathVariable("subSite") String subSite) {
+	@RequestMapping(value = "/cards-cybernetic", method = RequestMethod.GET)
+	public String cardsCybernetic(Model model, @PathVariable("subSite") String subSite) {
 		model.addAttribute("subSite", subSite);
-		return subSite + "/cards-cybernetics";
+		return subSite + "/cards-cybernetic";
 	}
 	
 	// Factions links
