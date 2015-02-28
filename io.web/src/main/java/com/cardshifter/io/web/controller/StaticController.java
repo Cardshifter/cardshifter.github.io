@@ -11,52 +11,56 @@ public class StaticController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String index(Model model) {
-		return "index";
+		model.addAttribute("view", "index");
+		return "template";
 	}
 	
 	@RequestMapping(value = "/play-cardshifter",method = RequestMethod.GET)
 	public String playCardshifter(Model model) {
-		return "play-cardshifter";
+		model.addAttribute("view", "play-cardshifter");
+		return "template";
 	}
 	
 	@RequestMapping(value = "/news",method = RequestMethod.GET)
 	public String news(Model model) {
-		return "news";
+		model.addAttribute("view", "news");
+		return "template";
 	}
 	
 	@RequestMapping(value = "/project",method = RequestMethod.GET)
 	public String project(Model model) {
-		return "project";
+		model.addAttribute("view", "project");
+		return "template";
 	}
 
 	@RequestMapping(value = "/contributors",method = RequestMethod.GET)
 	public String contributors(Model model) {
-		return "contributors";
+		model.addAttribute("view", "contributors");
+		return "template";
 	}
 	
 	@RequestMapping(value = "/screenshots",method = RequestMethod.GET)
 	public String screenshots(Model model) {
-		return "screenshots";
+		model.addAttribute("view", "screenshots");
+		return "template";
 	}
 	
 	@RequestMapping(value = "/contribute",method = RequestMethod.GET)
 	public String contribute(Model model) {
-		return "contribute";
+		model.addAttribute("view", "contribute");
+		return "template";
 	}
 	
 	@RequestMapping(value = "/mods",method = RequestMethod.GET)
 	public String mods(Model model) {
-		return "mods";
+		model.addAttribute("view", "mods");
+		return "template";
 	}
 	
-//	@RequestMapping(value = "/cyborg-chronicles",method = RequestMethod.GET)
-//	public String cyborgChronicles(Model model) {
-//		return "cyborg-chronicles";
-//	}
-//	
 	@RequestMapping(value = "/new-mod",method = RequestMethod.GET)
 	public String newMod(Model model) {
-		return "new-mod";
+		model.addAttribute("view", "new-mod");
+		return "template";
 	}
 	
 }

@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html class="" lang="en">
-
-  <div data-th-replace="templates/header :: header"></div>
-
-  <body>
-    <div data-th-replace="templates/navbar_top :: navbar-top"></div>
-    <div class="container-fluid" >
-      <div class="row">
-    <div data-th-replace="templates/side_navigation :: left-side-navigation"></div>
-
-        <div class="col-sm-9 col-md-10 main"><br/>
-          <h1 class="page-header">News</h1>
-        <div>
+<div class="col-sm-9 col-md-10 main"  data-th-fragment="content"><br/>
+  <h1 class="page-header">News</h1>
+  <div>
 
 
       <div class="default-template csh-body">
@@ -25,7 +14,7 @@
           <section class="csh-article">
             <h3 class="csh-article">Summary</h3>
             <p class="csh-article-content">Today marks the launch of the newest release of Cardshifter!</p>
-            <p class="csh-article-content">Find out <a href="https://github.com/Cardshifter/Cardshifter/wiki/How-to-play-Cardshifter">how to download and play</a> 
+            <p class="csh-article-content">Find out <a href="https://github.com/Cardshifter/Cardshifter/wiki/How-to-play-Cardshifter">how to download and play</a>
             today and come join in the fun!</p>
           </section>
           <section class="csh-article">
@@ -46,12 +35,9 @@
             <p class="csh-article-footer">Published by Cardshifter dev team</p>
           </footer>
         </article>
-        
-        
-        
-      </div>
-</div></div></div></div>
-<div data-th-replace="templates/footer :: footer"></div>
-<div data-th-replace="templates/scripts_loader :: scripts"></div>
 
-</body></html>
+
+
+      </div>
+  </div>
+</div>
