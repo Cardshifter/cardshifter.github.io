@@ -1,0 +1,110 @@
+<div class="col-sm-9 col-md-10 main"  data-th-fragment="content"><br/>
+  <h1 class="page-header">Game Rules</h1>
+  <div>
+
+
+      <div class="default-template csh-body">
+        <p><span style="text-decoration: underline;"></span>Rules effective for game version: 0.5 Alpha release</span></p>
+        <p>Updated: 2015-02-13</p>
+        <h2>General rules</h2>
+        <p>
+          Each player has access to the same library of 25 cards. More will be added in future releases. 
+          Upon starting a game with a player or AI, the player is prompted to build a deck to play with from the library. 
+          The player may also load a deck previously saved from a previous game. Each deck must contain exactly 30 cards, 
+          with no more than 3 copies of any individual card per deck.
+        </p>
+        <p>
+          Before the game begins, each player draws a hand of 5 cards, and is given the opportunity to mulligan none, 
+          any or all of those 5 cards once for new cards. The cards chosen for mulligan are reshuffled into the deck.
+        </p>
+        <p>
+          The remaining cards are placed to the side and comprise the player's Draw deck. Once destroyed, scrapped, or used, 
+          cards are placed in a pile next to the draw deck called the Discard pile.
+        </p>
+        <p>
+          Starting with a randomly chosen player, play alternates back and forth between the players. The player may play 
+          as many cards as they can afford to play during their turn. 
+        </p>
+        <p>
+          Each card has a cost in either Mana or Scrap. Each turn, the players' Mana Total increases by 1, 
+          starting with 1 on the first turn. Mana is returned to the current Mana Total at the start of each turn. 
+          Unused mana is lost at the end of a turn.
+        </p>
+        <p>
+          To gain Scrap, a player takes a Scrap-able card that is currently in their field and places it in their discard pile. 
+          Scrap only depletes when it is used, and is only accumulated when cards are Scrapped. 
+        </p>
+        
+        <h3>Goal</h3>
+        <p>
+          The goal of the game is reduce the other players health to zero. Each player starts with 10 health. 
+          Damage is caused to the other player by attacking them directly with units or by spillover damage. 
+          Spells are not currently in the game; they will be in a future release.
+        </p>
+        
+        <h3>Game flow</h3>
+        <p>
+          Each player has a Field in front of them which contains all of the units that they have played. 
+          When a unit is played, it has the Sickness on that turn and may not attack until the next turn. 
+          A player may choose to attack with any unit that does not have the Sickness. 
+          There is no limit to the number of units that a player may have on the Field.
+        </p>
+        <p>
+          When a player attacks, if the opposing player has any units in their Field, the attacking player 
+          must direct their attack against one of those units. If they have no units in their Field, 
+          the opposing player may be attacked directly. If attacking a unit, the Strength of the attacking unit 
+          is compared against the Health of the defending unit. If the Strength is greater, the defending unit is destroyed. 
+          The Strength of the defending unit is also compared against the Health of the attacking unit, 
+          and if it is greater, the attacking unit is destroyed.
+        </p>
+        
+        <h3>Card types</h3>
+        <p>
+          There are currently 3 types of cards. More will be supported in later versions.
+        </p>
+        <ul>
+          <li>
+            <strong>Bios:</strong> These cards have 0 or more Strength points, and 1 or more Health points. 
+            They can be Upgraded but not Scrapped. They are cast using Mana points and they are 
+            used for attacking and defending.
+          </li>
+          <li>
+            <strong>Mechs:</strong> These cards have 0 or more Strength points, and 1 or more Health points, 
+            as well as a Scrap value. They can be scrapped, but not upgraded. They are cast using Mana points 
+            and they are used for attacking and defending.
+          </li>
+          <li>
+            <strong>Upgrades:</strong> These cards have 0 or more Strength points, and 0 or more Health points. 
+            They cannot be cast onto the playing field as standalone, they have to be cast upon an eligible creature card. 
+            They increase the Strength and/or Health of the target by their own Strength and Health values. 
+            These cards are cast with Scrap points and are discarded along with the target if it is destroyed. 
+          </li>
+        </ul>
+        
+        <h3>Cards with effects</h3>
+        <p>
+          Certain cards have unique Effects which can give the player a tactical advantage. 
+          Some Upgrades can also grant an Effect onto a card. The effects are as follows:
+        </p>
+        <ul>
+          <li>
+            <strong>Rush:</strong> A card with Rush does not have the Sickness upon being cast onto the Field. 
+            Therefore, it can attack immediately. 
+          </li>
+          <li>
+            <strong>Ranged:</strong> A card with Ranged does not take any repercussion damage when attacking. 
+            Therefore, its target's Strength does not get applied against the card's Health upon attacking. 
+          </li>
+          <li>
+            <strong>Heal:</strong> A card with Heal will regenerate 1 Health per turn to the player who has 
+            that card cast in their Field. When the card is eliminated, the effect ceases.
+          </li>
+          <li>
+            <strong>Summon:</strong> A card with Summon will cast additional cards in the Field at no cost. 
+          </li>
+        </ul>
+
+      </div>
+  </div>
+</div>
+

@@ -45,7 +45,7 @@ public class CyborgChroniclesControllerTest {
         assertNotNull(content);
     }
     
-    //@Test TODO fix this test since we're pointing to an inexistant view
+    @Test 
     public void testGameRules() throws Exception {
     	MvcResult result = this.mvc.perform(get(CYBORG +"/game-rules"))
     	.andExpect(status().isOk())
