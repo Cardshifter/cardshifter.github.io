@@ -36,11 +36,11 @@ img.twitter-logo {
 
 /* FORMATTING FOR LEFT SIDE NAV MENU */
 
-div.csh-nav-width {
+.csh-nav-width {
     width: 19%
 }
 
-div.csh-left-menu-main {
+.csh-left-menu-main {
     font-size: 1.4em;
     font-weight: bold;
     padding-top: 3px;
@@ -48,7 +48,7 @@ div.csh-left-menu-main {
     margin: 0px;
 }
 
-div.csh-left-menu-sub {
+.csh-left-menu-sub {
     font-size: 1.2em;
     font-weight: normal;
     padding-left: 15px;
@@ -66,15 +66,15 @@ a.csh-nav-main {
 	color: #31B404;
 }
 
-div.csh-nav-background {
+.csh-nav-background {
     background-color: #000000;
 }
 
-div.csh-nav-padding {
+.csh-nav-padding {
     padding-top: 50px;
 }
 
-div.csh-nav-margin {
+.csh-nav-margin {
     margin-top: 50px;
 }
 /* FORMATTING FOR PAGE BODY */
@@ -209,7 +209,7 @@ p.csh-article-footer {
     font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-ul.csh-article-list, 
+ul.csh-article-list,
 ol.csh-article-list {
     font-size: 1.2em;
 }
