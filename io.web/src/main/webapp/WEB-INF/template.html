@@ -5,12 +5,13 @@
 
   <body>
     <div data-th-replace="templates/navbar_top :: navbar-top"></div>
-    <div class="container-fluid" >
+    <div class="container-fluid csh-margin-top" >
       <div class="row">
-    <div data-th-replace="templates/side_navigation :: left-side-navigation"></div>
-    <div data-th-replace="${view} :: content"></div>
+        <div data-th-replace="templates/side_navigation :: left-side-navigation"></div>
+        <div data-th-replace="${view} :: content"></div>
       </div>
     </div>
     <div data-th-replace="templates/footer :: footer"></div>
     <div data-th-replace="templates/scripts_loader :: scripts"></div>
-</body></html>
+  </body>
+</html>
