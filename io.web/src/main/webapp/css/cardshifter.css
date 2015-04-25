@@ -58,16 +58,15 @@ body {
     text-decoration: underline;
 }
 
-.csh-nav-margin {
+.csh-side-nav {
   margin-top: 25px;
+  background-color: #EEEEEE;
+  padding-bottom: 5px;
 }
 
-.csh-nav-background {
-    background-color: #EEEEEE;
-}
 
 .csh-margin-top {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 /* FORMATTING FOR PAGE BODY */
