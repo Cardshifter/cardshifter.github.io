@@ -58,6 +58,9 @@ body {
     text-decoration: underline;
 }
 
+.csh-nav-margin {
+  margin-top: 25px;
+}
 
 .csh-nav-background {
     background-color: #EEEEEE;
@@ -90,7 +93,6 @@ body {
     padding: 5px 0 5px 15px;
     border-top: 1px solid #eaeaea;
     color: #777;
-    font-size: 0.8em;
     width: 100%;
     text-align: center;
     /* Set the fixed height of the footer here */
@@ -102,12 +104,12 @@ body {
 
 /* FORMATTING FOR COMMON PAGE ELEMENTS */
 
-h1, h2, h3, blockquote {
-    font-family: Georgia, Times, "Times New Roman", serif;
+.header-border {
+  border-bottom: 1px solid #eee;
 }
 
-h1 {
-    padding-top: 15px;
+h1, h2, h3, blockquote {
+    font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 p, span, table, ul, ol {
