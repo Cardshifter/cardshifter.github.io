@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html class="" lang="en">
 
-  <div data-th-replace="templates/header :: header"></div>
+<head data-th-replace="templates/header :: header"></head>
 
-  <body>
-    <div data-th-replace="templates/navbar_top :: navbar-top"></div>
-    <div class="container-fluid" >
-      <div class="row">
-    <div data-th-replace="templates/side_navigation :: left-side-navigation"></div>
-    <div data-th-replace="${view} :: content"></div>
-      </div>
+<body>
+  <div data-th-replace="templates/navbar_top :: navbar-top"></div>
+  <div class="container-fluid csh-margin-top">
+    <div class="row">
+      <div data-th-replace="templates/side_navigation :: left-side-navigation"></div>
+      <div data-th-replace="${view} :: content"></div>
     </div>
-    <div data-th-replace="templates/footer :: footer"></div>
-    <div data-th-replace="templates/scripts_loader :: scripts"></div>
-</body></html>
+  </div>
+  <div data-th-replace="templates/footer :: footer"></div>
+  <div data-th-replace="templates/scripts_loader :: scripts"></div>
+</body>
+
+</html>
