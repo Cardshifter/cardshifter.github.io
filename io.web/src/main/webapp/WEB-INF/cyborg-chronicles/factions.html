@@ -1,152 +1,37 @@
-<!DOCTYPE html>
-<html class="" lang="en">
+<div class="col-sm-9 col-md-9 main" data-th-fragment="content">
+  <h1 class="header-border">Factions</h1>
+  <div class="default-template csh-body">
 
-<div data-th-replace="cyborg-chronicles/templates/header :: header"></div>
+    <p>These are dark and divisive times. Humans and machines are engaged in continual conflict. Earth is in a state of depletion and chaos, so much so that is has drawn the attention of others in the galaxy.</p>
+    <p>Earth's fate is in the balance, in the hands of six factions, each fighting for their own reasons...</p>
 
-<body>
-	<div
-		data-th-replace="cyborg-chronicles/templates/navbar_top :: navbar-top"></div>
-	<div class="container-fluid">
-		<div class="row">
-			<div
-				data-th-replace="cyborg-chronicles/templates/side_navigation :: left-side-navigation"></div>
+    <!-- Planet Corp. -->
+    <h3><a class="csh-bypass-link-color" href="faction-planet-corp.html" data-th-href="@{/cyborg-chronicles/faction-planet-corp}">Planet Corp.</a></h3>
+    <p>A massive corporation that focuses on defense and military technology. Their wealthy leaders hide behind armies of Mechs. The corporation's influence in politics is very deep and they are generally hated and criticized for their lobbying of governments.</p>
 
-			<div class="col-sm-9 col-md-10 main">
-				<br />
-				<h1 class="page-header">Factions</h1>
-				<div>
+    <!-- Blackout -->
+    <h3><a class="csh-bypass-link-color" href="faction-blackout.html" data-th-href="@{/cyborg-chronicles/faction-blackout}">Blackout</a></h3>
+    <p>This group of rebels are in strong opposition to the dominance of Planet Corp. They fight for the scarce natural resources to be shared with the population in order to reduce crime, famine and disease among the middle and lower classes.</p>
 
+    <!-- Earth Survival Union -->
+    <h3><a class="csh-bypass-link-color" href="faction-esu.html" data-th-href="@{/cyborg-chronicles/faction-esu}">Earth Survival Union (ESU)</a></h3>
+    <p>The ESU is composed of political lobbyists, wealthy investors and scientists who are fighting to preserve Earth's viability for humans to inhabit. They research and manufacture Mechs that help with reducing crime, diminishing pollution, preserving
+      resources and generating clean energy.</p>
 
-					<div class="default-template csh-body">
+    <!-- Tyrakk -->
+    <h3><a class="csh-bypass-link-color" href="faction-tyrakk.html" data-th-href="@{/cyborg-chronicles/faction-tyrakk}">Tyrakk</a></h3>
+    <p>The Tyrakk are an alien race from a neighboring star cluster. They thrive on military conquest and will not hesitate to enslave and even commit genocide to seize a planet and its resources.
+    </p>
 
-						<p>These are dark and divisive times. Humans and machines are
-							engaged in continual conflict. Earth is in a state of depletion
-							and chaos, so much so that is has drawn the attention of others
-							in the galaxy.</p>
-						<p>Earth's fate is in the balance, in the hands of six
-							factions, each fighting for their own reasons...</p>
+    <!-- Celescion -->
+    <h3><a class="csh-bypass-link-color" href="faction-celescion.html" data-th-href="@{/cyborg-chronicles/faction-celescion}">Celescion</a></h3>
+    <p>The Celescion are one of the oldest civilizations in the galaxy. Their technology is astoundingly advanced to the point it would appear as magic to humans. They have mastered the manipulation of matter and energy and are generally peaceful. They have
+      been observing the conflicts involving humans and Tyrakk from a distance.</p>
 
-						<!-- Planet Corp. -->
-						<h3>
-							<a href="faction-planet-corp.html"
-								data-th-href="@{/cyborg-chronicles/faction-planet-corp}">Planet
-								Corp.</a>
-						</h3>
-						<p>
-							A massive corporation that focuses on defense and military
-							technology. Their wealthy leaders hide behind armies of Mechs,
-							and have created a worldwide virtual communication network,
-							called <i>"The Plane"</i>, to which all their machines and
-							systems are connected. They also manufacture communication
-							devices and implants for humans to connect to The Plane.
-						</p>
-						<p>Planet Corp., as their name implies, also explore other
-							planets to exploit resources for their Earth operations. The
-							corporation's influence in politics is very deep and they are
-							generally hated and criticized for their lobbying of Earth
-							governments.</p>
+    <!-- BioShell -->
+    <h3><a class="csh-bypass-link-color" href="faction-bioshell.html" data-th-href="@{/cyborg-chronicles/faction-bioshell}">BioShell</a></h3>
+    <p>The BioShell were formerly human, but their mind got corrupted by a very advanced AI which has become self-aware. They perform the AI's bidding as it tries to take control of the global communication network, and their human brains are used as additional
+      processing cores for the AI.</p>
 
-						<!-- Blackout -->
-						<h3>
-							<a href="faction-blackout.html"
-								data-th-href="@{/cyborg-chronicles/faction-blackout}">Blackout</a>
-						</h3>
-						<p>This group of rebels are in strong opposition to the
-							dominance of Planet Corp. They fight for the scarce natural
-							resources to be shared with the population in order to reduce
-							crime, famine and disease among the middle and lower classes.</p>
-						<p>They organize protests against Planet Corp., often
-							involving violence, and will sometimes even use industrial
-							espionage and cybercrime on The Plane to harm their foes. They
-							are very proficient in cybernetics to enhance their soldiers.</p>
-
-						<!-- Earth Survival Union -->
-						<h3>
-							<a href="faction-esu.html"
-								data-th-href="@{/cyborg-chronicles/faction-esu}">Earth
-								Survival Union (ESU)</a>
-						</h3>
-						<p>The ESU is composed of political lobbyists, wealthy
-							investors and scientists who are fighting to preserve Earth's
-							viability for humans to inhabit. They research and manufacture
-							Mechs that help with reducing crime, diminishing pollution,
-							preserving resources and generating clean energy.</p>
-						<p>They strongly oppose both of Planet Corp. and Blackout for
-							ethical reasons, and ESU's private security corps sometimes have
-							to engage in combat to defend the Union against opposing
-							factions.</p>
-
-						<!-- Tyrakk -->
-						<h3>
-							<a href="faction-tyrakk.html"
-								data-th-href="@{/cyborg-chronicles/faction-tyrakk}">Tyrakk</a>
-						</h3>
-						<p>The Tyrakk are an alien race from a neighboring star
-							cluster. They thrive on military conquest and will not hesitate
-							to enslave and even commit genocide to seize a planet and its
-							resources.</p>
-						<p>The Tyrakk and Planet Corp. have often found themselves
-							fighting each other over planet resources, much to those planets'
-							detriment. To eliminate competition, the Tyrakk have decided that
-							Earth will be their next conquest.</p>
-
-						<!-- Celescion -->
-						<h3>
-							<a href="faction-celescion.html"
-								data-th-href="@{/cyborg-chronicles/faction-celescion}">Celescion</a>
-						</h3>
-						<p>The Celescion are one of the oldest civilizations in the
-							galaxy. Their technology is astoundingly advanced to the point it
-							would appear as magic to humans. They have mastered the
-							manipulation of matter and energy and are generally peaceful.
-							They have been observing the conflicts involving humans and
-							Tyrakk.</p>
-						<p>
-							For the greater good of the galaxy, they have decided to get
-							involved in mitigating the conflict. After unsuccessful attempts
-							at negotiations, the Celescion set up a military base of
-							operations of Earth's moon. They also injected a very powerful AI
-							into The Plane, the <i>Bio-Replicating Artificial
-								Intelligence</i>, or
-							<code>BRAIN</code>
-							, to intercept communications and interfere with Mechs.
-						</p>
-
-						<!-- BioShell -->
-						<h3>
-							<a href="faction-bioshell.html"
-								data-th-href="@{/cyborg-chronicles/faction-bioshell}">BioShell</a>
-						</h3>
-						<p>
-							After
-							<code>BRAIN</code>
-							effectively infected The Plane, something went terribly wrong:
-							<code>BRAIN</code>
-							overrode its own programming and became self-aware.
-							<code>BRAIN</code>
-							began completely overtaking Mechs and even humans, making them
-							slaves to its bidding.
-						</p>
-						<p>
-							These it named BioShells, and it uses them via The Plane to
-							attack all factions and attempt to effectively become overlord of
-							the Earth. BioShells are a living part of The Plane, with their
-							bodies rendered mostly useless except to increase
-							<code>BRAIN</code>
-							's power and reach.
-						</p>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div data-th-replace="cyborg-chronicles/templates/footer :: footer"></div>
-	<div
-		data-th-replace="cyborg-chronicles/templates/scripts_loader :: scripts"></div>
-
-
-
-
-</body>
-</html>
+  </div>
+</div>
