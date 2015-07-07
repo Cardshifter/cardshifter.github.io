@@ -159,6 +159,27 @@ div.contributor {
   margin-top: 10px;
 }
 
+/* CARD LISTS TAGS */
+
+ul.no-bullets {
+    list-style-type: none;
+}
+li.card-detail {
+    font-size: 0.8em;
+}
+.mech-card-header {
+    font-family: Consolas, Monaco, "Courier New", monospace;
+}
+span.quote-style {
+    font-style: italic; 
+    font-family: Georgia, Times, "Times New Roman", serif;
+}
+code.mech-quote-style {
+	font-style: italic; 
+	font-size: 1.0em; 
+	color: #777777;
+}
+
 /* FORMATTING FOR ARTICLES */
 
 article {}
