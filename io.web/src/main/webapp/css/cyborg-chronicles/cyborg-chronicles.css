@@ -151,7 +151,6 @@ code {
 blockquote {
     font-size: 1.4em;
     color: #BDBDBD;
-    font-size: 1.2em;
 }
 
 div.contributor {
@@ -168,7 +167,7 @@ li.card-detail {
     font-size: 0.8em;
 }
 .mech-card-header {
-    font-family: Consolas, Monaco, "Courier New", monospace;
+    /* font-family: Consolas, Monaco, "Courier New", monospace; */
 }
 span.quote-style {
     font-style: italic; 
@@ -176,8 +175,8 @@ span.quote-style {
 }
 code.mech-quote-style {
 	font-style: italic; 
-	font-size: 1.0em; 
-	color: #777777;
+	font-size: 1.1em; 
+	color: #888888;
 }
 
 /* FORMATTING FOR ARTICLES */
