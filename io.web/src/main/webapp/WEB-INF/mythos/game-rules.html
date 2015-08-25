@@ -1,0 +1,116 @@
+<div class="col-sm-9 col-md-10 main" data-th-fragment="content">
+  <h1 class="header-border">Game Rules</h1>
+  <div class="default-template csh-body">
+    <p>
+      <span style="text-decoration: underline;">Rules effective for game version: 0.6 release</span>
+    </p>
+    <p>Updated: 2015-07-06</p>
+    <h2>General rules</h2>
+    <p>
+      Each player has access to the same library of cards. Upon starting a game with a player or AI, the player is 
+      prompted to build a deck to play with from the library. The player may also load a deck previously saved
+      from a previous game, or load one of the decks provided with the game. Each deck must contain exactly 30 cards. 
+      By default, a player can have up to 3 copies of any given cards, although some individual cards may have a
+      different limit.
+    </p>
+    <p>
+      Before the game begins, each player draws a hand of 5 cards, and is given the opportunity to mulligan 
+      none, any or all of those 5 cards in exchange for new cards. The cards chosen for mulligan are reshuffled 
+      into the deck.
+    </p>
+    <p>
+      The remaining cards are placed to the side and comprise the player's Draw deck. Once destroyed or scrapped, 
+      cards are placed in the Discard pile.<br />
+      <i>Note: There are no Discard pile mechanics supported at this time, but will be in a future release.</i>
+    </p>
+    <p>
+      Starting with a randomly chosen player, play alternates back and forth between the players. 
+      The player may play as many cards as they can afford to play during their turn.
+    </p>
+    <p>
+      Each card has a cost in either Mana or Scrap. Each turn, the players' maximum Mana increases by 1, 
+      starting with 1 on the first turn and up to a maximum of 10 total. Mana is returned to the current maximum Mana 
+      at the start of each turn. Unused mana is lost at the end of a turn.
+    </p>
+    <p>
+      To gain Scrap, a player takes a Scrappable card that is currently in their field selects the Scrap option, 
+      which destroys the card and adds its Scrap value to the player's Scrap resource. 
+      Scrap only depletes when it is used, and is only accumulated when cards are Scrapped.
+    </p>
+
+    <h3>Goal</h3>
+    <p>
+      The goal of the game is reduce the other players health to zero. Each player starts with 30 health. 
+      Damage is caused to the other player by attacking them directly with units. A player cannot be attacked directly
+      if they have creatures in their Battlefield; the creatures must be destroyed first.
+      Some card effects and spells can damage the player directly even if they have creatures in their Battlefield.
+    </p>
+
+    <h3>Game flow</h3>
+    <p>
+      Each player has a Battlefield which contains all of the units that they have played. 
+      When a unit is played, it has the Sickness on that turn and may not attack until the next turn, unless the card
+      has the Rush effect, which overrides the Sickness. 
+      There is no limit to the number of units that a player may have on the Battlefield.
+    </p>
+    <p>
+      When a player attacks, if the opposing player has any units in their Battlefield, the attacking player 
+      must direct their attack against one of those units. If they have no units in their Battlefield, the opposing player 
+      can be attacked directly. 
+    </p>
+    <p>
+      When a creature attacks another, they damage each other with their Attack value against their Health value.
+      If a creature's Health reaches 0, it is destroyed, regardless of whether it is the attacking or defending unit.
+      If a creature survives an attack, its health will be reduced according to the other creature's Attack value.
+      Creatures' health is restored to their maximum health at the end of each turn. 
+    </p>
+
+    <h3>Card types</h3>
+    <p>
+      There are currently 4 types of cards.
+    </p>
+    <ul>
+      <li>
+        <strong>Bios:</strong> These cards have 0 or more Attack points, and 1 or more Health points. 
+        They can be Upgraded using Enchantments, but not Scrapped. They are cast using Mana points and they are used for 
+        attacking and defending.
+      </li>
+      <li>
+        <strong>Mechs:</strong> These cards have 0 or more Attack points, and 1 or more Health points, 
+        as well as a Scrap value. They can be Scrapped, but not upgraded. They are cast using Mana points 
+        and they are used for attacking and defending.
+      </li>
+      <li>
+        <strong>Enchantments:</strong> These cards change Attack and/or Health values of a creature.
+        They cannot be cast onto the playing field as standalone, they have to be cast upon an eligible Bio card. 
+        These cards are cast with Scrap points and are discarded after being played on a target and its effect applied.
+      </li>
+      <li>
+        <strong>Spells:</strong> These cards are one-time use and can cause a variety of effects, 
+        which will be described on each spell card.
+        These cards never enter the Battlefield. 
+      </li>
+    </ul>
+
+    <h3>Cards with effects</h3>
+    <p>
+      Certain cards have unique Effects which can give the player a tactical advantage. Some Upgrades can also grant an Effect onto a card. The effects are as follows:
+    </p>
+    <ul>
+      <li>
+        <strong>Rush:</strong> A card with Rush does not have the Sickness upon being cast onto the Battlefield. 
+        Therefore, it can attack immediately.
+      </li>
+      <li>
+        <strong>Ranged:</strong> A card with Ranged does not take any repercussion damage when attacking. 
+        Therefore, its target's Attack does not get applied against the card's Health upon attacking.
+        However, it has to take one turn to reload after attacking. 
+      </li>
+      <li>
+        <strong>Others:</strong> There is a multitude of other types of effects which are unique to each card.
+        Each of those will be described on the cards themselves. They include anything from summoning other cards,
+        modifying Attack or Health values of creatures in play, damaging or healing players, etc.
+      </li>
+    </ul>
+  </div>
+</div>
