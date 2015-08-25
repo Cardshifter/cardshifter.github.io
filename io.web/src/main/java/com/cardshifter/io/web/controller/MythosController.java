@@ -34,6 +34,7 @@ public class MythosController {
 	public String story(Model model) {
 		model.addAttribute("view","story");
 		return MYTHOS_TEMPLATE;
+	}
 
 	// template link for reference only
 		@RequestMapping(value = "/page-template", method = RequestMethod.GET)
