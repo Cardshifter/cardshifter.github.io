@@ -1,6 +1,7 @@
 body {
     font-size: 120%;
     font-family: Verdana, Geneva, sans-serif;
+    float: left;
 }
 
 /* FORMATTING FOR TOP NAV BAR */
@@ -59,9 +60,12 @@ body {
 }
 
 .csh-side-nav {
+  position: relative;
+  float: left;
   margin-top: 25px;
   background-color: #EEEEEE;
   padding-bottom: 5px;
+  bottom: 0px;
 }
 
 
@@ -134,9 +138,10 @@ blockquote {
 }
 
 div.contributor {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  width: 350px;
+
+  width: 325px;
+  height: 260px;
+  /*border: solid 1px red;*/
 }
 
 /* FORMATTING FOR ARTICLES */
