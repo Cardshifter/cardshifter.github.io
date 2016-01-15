@@ -27,6 +27,12 @@ public class StaticController {
 		return "template";
 	}
 	
+	@RequestMapping(value = "/overview",method = RequestMethod.GET)
+	public String overview(Model model) {
+		model.addAttribute("view", "overview");
+		return "template";
+	}
+	
 	@RequestMapping(value = "/project",method = RequestMethod.GET)
 	public String project(Model model) {
 		model.addAttribute("view", "project");
