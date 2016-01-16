@@ -8,6 +8,7 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.thymeleaf.spring4.SpringTemplateEngine;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
+import org.thymeleaf.templatemode.StandardTemplateModeHandlers;
 import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
 
 @Configuration
@@ -20,7 +21,7 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter {
 		ServletContextTemplateResolver templateResolver = new ServletContextTemplateResolver();
 		templateResolver.setPrefix("/WEB-INF/");
 		templateResolver.setSuffix(".html");
-		templateResolver.setTemplateMode("HTML5");
+		templateResolver.setTemplateMode(StandardTemplateModeHandlers.LEGACYHTML5.getTemplateModeName());
 		templateResolver.setOrder(10);
 		return templateResolver;
 	}
@@ -44,8 +45,8 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter {
 	@Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		registry
-			.addResourceHandler("/css/**","/images/**")
-			.addResourceLocations("/css/", "/images/");
-	}
+			.addResourceHandler("/css/**","/images/**","/js/**","/upload/**")
+			.addResourceLocations("/css/", "/images/","/js/","/upload/");
+	} //TODO Fix /io-web needed everywhere
 
 }

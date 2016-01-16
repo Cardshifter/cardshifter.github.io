@@ -11,8 +11,7 @@ public class StaticController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String index(Model model) {
-		model.addAttribute("view", "index");
-		return "template";
+		return "index";
 	}
 	
 	@RequestMapping(value = "/play-cardshifter",method = RequestMethod.GET)
