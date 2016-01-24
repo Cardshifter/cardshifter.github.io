@@ -28,6 +28,7 @@ public class AppInitializer  implements WebApplicationInitializer {
 				rootContext));
 		dispatcherSpring.setLoadOnStartup(1);
 		dispatcherSpring.addMapping("/");
+		dispatcherSpring.setInitParameter("throwExceptionIfNoHandlerFound", "true");
 		
 		servletContext.addListener(new ContextLoaderListener(rootContext));
 	}
