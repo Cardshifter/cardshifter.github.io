@@ -525,7 +525,8 @@ input:focus::-webkit-input-placeholder {
 
 header {
     padding: 104px 0;
-    background: url(../images/header.jpg) no-repeat 50% 50%;
+    /*This was originally header.jpg*/
+    background: url(../images/Andromeda_galaxy.jpg) no-repeat 50% 50%;
     font: 24px/36px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
     -moz-background-size: cover;
