@@ -526,7 +526,8 @@ input:focus::-webkit-input-placeholder {
 header {
     padding: 104px 0;
     /*This was originally header.jpg*/
-    background: url(../images/Andromeda_galaxy.jpg) no-repeat 50% 50%;
+    /* background: url(../images/Andromeda_galaxy.jpg) no-repeat 50% 50%; */
+    background: url(../images/wood-background.jpg) no-repeat 50% 50%;
     font: 24px/36px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: white;
     -moz-background-size: cover;
@@ -582,7 +583,12 @@ header .buttons-wrapper .button-stripe {
 }
 
 .header-img {
-    float: right
+    float: right;
+    opacity: 0.60;
+}
+
+.header-img:hover {
+	opacity: 0.90;
 }
 
 .header-wrapper {
