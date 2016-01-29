@@ -584,11 +584,12 @@ header .buttons-wrapper .button-stripe {
 
 .header-img {
     float: right;
-    opacity: 0.60;
+    opacity: 0.85;
+    padding-top: 100px;
 }
 
 .header-img:hover {
-	opacity: 0.90;
+	opacity: 0.98;
 }
 
 .header-wrapper {
