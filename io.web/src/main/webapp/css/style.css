@@ -769,6 +769,13 @@ footer {
 .comments .box h4 a:hover {
     text-decoration: underline
 }
+.comments .box a {
+    font-weight: bold;
+    color: white;
+}
+.comments .box a:hover {
+    text-decoration: underline
+}
 
 .comments .box p {
     font-size: 19px;
