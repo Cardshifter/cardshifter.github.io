@@ -619,13 +619,13 @@ footer {
     clear: both
 }
 
-.newsletter {
+.news {
     background: #fafafa;
     padding: 103px 0 109px;
     text-align: center;
 }
 
-.newsletter p {
+.news p {
     font-size: 16px;
     line-height: 28px;
     max-width: 556px;
@@ -633,14 +633,14 @@ footer {
     clear: both;
 }
 
-.newsletter-title {
+.news-title {
     font: bold 48px/60px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 38px;
 }
 
-.newsletter-form {
+.news-form {
     position: relative;
     display: inline-block;
     padding-right: 169px;
@@ -653,7 +653,7 @@ footer {
     box-sizing: border-box;
 }
 
-.newsletter-form .button {
+.news-form .button {
     position: absolute;
     right: 0;
     top: 0;
@@ -1020,11 +1020,11 @@ footer {
 /* ===[ Responsive all mobile sizes ]=== */
 
 @media (max-width: 979px) { 
-  .newsletter-form {
+  .news-form {
       min-width: 0
   }
 
-  .newsletter-title {
+  .news-title {
       font-size: 36px;
       line-height: 48px;
   }
