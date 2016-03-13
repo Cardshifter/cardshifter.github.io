@@ -746,26 +746,21 @@ footer {
     text-align: center;
     padding: 70px 0 60px;
 }
-
 .comments .box {
     display: none;
     padding: 0 195px 55px;
 }
-
 .comments .box.visible {
     display: block
 }
-
 .comments .box h4 {
     font: 500 36px/46px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 37px;
 }
-
 .comments .box h4 a {
     font-weight: bold;
     color: white;
 }
-
 .comments .box h4 a:hover {
     text-decoration: underline
 }
@@ -776,20 +771,17 @@ footer {
 .comments .box a:hover {
     text-decoration: underline
 }
-
 .comments .box p {
     font-size: 19px;
     line-height: 32px;
     font-weight: 300;
 }
-
 .comments .tabs {
     display: block;
     text-align: center;
     font-size: 0;
     line-height: 0;
 }
-
 .comments .tabs li {
     display: inline-block;
     margin: 0 8px;
@@ -807,16 +799,13 @@ footer {
     -webkit-transition: box-shadow 0.3s ease, background-color 0.3s ease;
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
-
 .comments .tabs li:hover {
     background-color: white
 }
-
 .comments .tabs li.active {
     background-color: transparent;
     box-shadow: 0 0 0 2px white;
 }
-
 .comments .tab {
     position: relative
 }
