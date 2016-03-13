@@ -260,9 +260,15 @@ img {
                                         DOWNLOAD
 ----------------------------------------------------------------------------------------*/
 
-#download { padding: 70px 0; }
+#download { 
+	padding: 70px 0; 
+}
 
-#download h2 { color: #fff; }
+#download h2 { 
+	font-size: 48px;
+	color: #fff;
+	text-shadow: 4px 4px 8px #000000;
+}
 
 #download h2 .icon { 
 	margin: 0 20px 0 0; 
@@ -270,16 +276,16 @@ img {
 
 .bg-color-main {
     background-size: cover;
-    background: url(../images/wood-background.jpg) no-repeat 50% 50%;    
+    background: url(../images/wood-background.jpg) no-repeat 50% 50%;
 }
 @media (max-width: 767px) {
 
-#download h2 { margin: 0; }
-
-#download h2 .icon {
-    margin: 0 0 10px 0;
-    display: block;
-}
+	#download h2 { margin: 0; }
+	
+	#download h2 .icon {
+	    margin: 0 0 10px 0;
+	    display: block;
+	}
 }
 div.download {
     font-size: 50px;
@@ -346,7 +352,7 @@ article:after,
 .comments .tab-prev,
 .comments .tab-next,
 .button-download:after {
-    background: url(../images/sprite.png) 0 0 no-repeat
+    background: url(../images/sprite@2x.png) 0 0 no-repeat
 }
 
 html {
@@ -525,7 +531,7 @@ input:focus::-webkit-input-placeholder {
 /* header --------------------------  */
 
 header {
-    padding: 34px 0;
+    padding: 34px 0 94px;
     /*This was originally header.jpg*/
     /* background: url(../images/Andromeda_galaxy.jpg) no-repeat 50% 50%; */
     background: url(../images/wood-background.jpg) no-repeat 50% 50%;
@@ -537,7 +543,7 @@ header {
     background-size: cover;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box;        
 }
 
 header h1 {
@@ -545,10 +551,11 @@ header h1 {
     line-height: 60px;
     font-weight: 500;
     margin-bottom: 38px;
+    text-shadow: 2px 2px 4px #000;
 }
 
 header h1 span {
-    font-weight: 200
+    font-weight: 200;
 }
 
 header .autor {
@@ -756,6 +763,7 @@ footer {
 .comments .box h4 {
     font: 500 36px/46px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-bottom: 37px;
+    text-shadow: 2px 2px 4px #666;
 }
 .comments .box h4 a {
     font-weight: bold;
@@ -815,11 +823,13 @@ footer {
     position: absolute;
     left: 98px;
     top: 94px;
-    width: 23px;
-    height: 16px;
+    width: 50px;
+    height: 50px;
     background-position: 0 0;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
+    opacity: 0.7;
+    filter: alpha(opacity=100);
+    -webkit-filter: drop-shadow(2px 2px 2px #000);
+    filter:         drop-shadow(2px 2px 2px #000); 
 }
 
 .comments .tab-prev:hover,
@@ -831,7 +841,7 @@ footer {
 .comments .tab-next {
     left: auto;
     right: 98px;
-    background-position: -50px 0;
+    background-position: -100px 0;
 }
 
 .video-title {
@@ -933,17 +943,22 @@ footer {
 .discover-content {
     float: right;
     width: 50%;
-    padding: 20px 70px 50px 5px;
+    padding: 0px 0px 50px 5px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
+.discover-content p {
+	font-size: 1.2em;
+}
+
 .discover-content h2 {
-    font-size: 48px;
+    font-size: 36px;
     line-height: 72px;
     font-weight: bold;
-    margin-bottom: 29px;
+    margin-bottom: 15px;
+    margin-top: 15px
 }
 
 .discover-button {
@@ -1016,158 +1031,158 @@ footer {
 /* ===[ Responsive all mobile sizes ]=== */
 
 @media (max-width: 979px) { 
-  .news-form {
-      min-width: 0
-  }
-
-  .news-title {
-      font-size: 36px;
-      line-height: 48px;
-  }
-
-  .header-img {
-      display: none
-  }
-
-  .header-wrapper {
-      padding-top: 0;
-      max-width: none;
-  }
-
-  header {
-      text-align: center;
-      font-size: 19px;
-      line-height: 28px;
-  }
-
-  header h1 {
-      font-size: 46px;
-      line-height: 52px;
-  }
-
-  header .buttons-wrapper .button {
-      margin-bottom: 20px
-  }
-
-  .promo-column {
-      width: auto;
-      max-width: 290px;
-      margin-left: auto;
-      margin-right: auto;
-      float: none;
-      text-align: center;
-  }
-
-  .promo-column img {
-      margin-left: auto;
-      margin-right: auto;
-  }
-
-  .simple-content {
-      float: none;
-      width: auto;
-      padding-top: 0;
-  }
-
-  .simple-content h3 {
-      font-size: 36px;
-      line-height: 46px;
-      text-align: center;
-  }
-
-  .simple-content ul {
-      max-width: 310px;
-      margin-left: auto;
-      margin-right: auto;
-  }
-
-  .simple-img {
-      float: none;
-      width: auto;
-      max-width: none;
-      margin-left: -80px;
-      margin-right: -80px;
-  }
-
-  .comments .box {
-      padding-left: 0;
-      padding-right: 0;
-  }
-
-  .comments .tab-prev,
-  .comments .tab-next {
-      display: none
-  }
-
-  .social-list li {
-      float: none;
-      text-align: center;
-      padding-top: 20px;
-  }
-
-  .social-list li:first-child {
-      padding-top: 0
-  }
-
-  .social-list li a {
-      margin-left: auto;
-      margin-right: auto;
-  }
-
-  .video-title {
-      font-size: 36px;
-      line-height: 46px;
-  }
-
-  .discover-content {
-      float: none;
-      width: auto;
-      padding-left: 0;
-      padding-right: 0;
-      text-align: center;
-  }
-
-  .discover-content h2 {
-      font-size: 60px;
-      line-height: 60px;
-  }
-
-  .discover-img {
-      float: none;
-      width: auto;
-  }
-
-  .discover-img img {
-      margin: 0 auto
-  }
-
-  .discover-button {
-      text-align: center
-  }
-
-  .discover-button .button-download {
-      float: none;
-      display: inline-block;
-  }
-
-  .comments .tabs li {
-      width: 18px;
-      height: 18px;
-      margin: 0 14px;
-  }
+	  .news-form {
+	      min-width: 0
+	  }
+	
+	  .news-title {
+	      font-size: 36px;
+	      line-height: 48px;
+	  }
+	
+	  .header-img {
+	      display: none
+	  }
+	
+	  .header-wrapper {
+	      padding-top: 0;
+	      max-width: none;
+	  }
+	
+	  header {
+	      text-align: center;
+	      font-size: 19px;
+	      line-height: 28px;
+	  }
+	
+	  header h1 {
+	      font-size: 46px;
+	      line-height: 52px;
+	  }
+	
+	  header .buttons-wrapper .button {
+	      margin-bottom: 20px
+	  }
+	
+	  .promo-column {
+	      width: auto;
+	      max-width: 290px;
+	      margin-left: auto;
+	      margin-right: auto;
+	      float: none;
+	      text-align: center;
+	  }
+	
+	  .promo-column img {
+	      margin-left: auto;
+	      margin-right: auto;
+	  }
+	
+	  .simple-content {
+	      float: none;
+	      width: auto;
+	      padding-top: 0;
+	  }
+	
+	  .simple-content h3 {
+	      font-size: 36px;
+	      line-height: 46px;
+	      text-align: center;
+	  }
+	
+	  .simple-content ul {
+	      max-width: 310px;
+	      margin-left: auto;
+	      margin-right: auto;
+	  }
+	
+	  .simple-img {
+	      float: none;
+	      width: auto;
+	      max-width: none;
+	      margin-left: -80px;
+	      margin-right: -80px;
+	  }
+	
+	  .comments .box {
+	      padding-left: 0;
+	      padding-right: 0;
+	  }
+	
+	  .comments .tab-prev,
+	  .comments .tab-next {
+	      display: none
+	  }
+	
+	  .social-list li {
+	      float: none;
+	      text-align: center;
+	      padding-top: 20px;
+	  }
+	
+	  .social-list li:first-child {
+	      padding-top: 0
+	  }
+	
+	  .social-list li a {
+	      margin-left: auto;
+	      margin-right: auto;
+	  }
+	
+	  .video-title {
+	      font-size: 36px;
+	      line-height: 46px;
+	  }
+	
+	  .discover-content {
+	      float: none;
+	      width: auto;
+	      padding-left: 0;
+	      padding-right: 0;
+	      text-align: center;
+	  }
+	
+	  .discover-content h2 {
+	      font-size: 60px;
+	      line-height: 60px;
+	  }
+	
+	  .discover-img {
+	      float: none;
+	      width: auto;
+	  }
+	
+	  .discover-img img {
+	      margin: 0 auto
+	  }
+	
+	  .discover-button {
+	      text-align: center
+	  }
+	
+	  .discover-button .button-download {
+	      float: none;
+	      display: inline-block;
+	  }
+	
+	  .comments .tabs li {
+	      width: 18px;
+	      height: 18px;
+	      margin: 0 14px;
+	  }
 }
 
 /* ===[ Responsive just mobile portrait ]=== */
 
 @media (max-width: 479px) { 
-  header .buttons-wrapper .button.button-stripe {
-      margin-left: 0
-  }
-
-  .discover-content h2 {
-      font-size: 36px;
-      line-height: 46px;
-  }
+	  header .buttons-wrapper .button.button-stripe {
+	      margin-left: 0
+	  }
+	
+	  .discover-content h2 {
+	      font-size: 36px;
+	      line-height: 46px;
+	  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) { 
