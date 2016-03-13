@@ -264,12 +264,13 @@ img {
 
 #download h2 { color: #fff; }
 
-#download h2 .icon { margin: 0 20px 0 0; }
+#download h2 .icon { 
+	margin: 0 20px 0 0; 
+}
 
 .bg-color-main {
     background-size: cover;
-    background-image: url(../images/download_bg.jpg);
-    box-shadow: inset 0 0 0 100px rgba(27, 182, 251, 0.69);
+    background: url(../images/wood-background.jpg) no-repeat 50% 50%;    
 }
 @media (max-width: 767px) {
 
@@ -281,7 +282,7 @@ img {
 }
 }
 div.download {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 300;
 }
 section {
@@ -600,11 +601,11 @@ header .buttons-wrapper .button-stripe {
 /* footer --------------------------  */
 
 footer {
-    background: #324a57;
-    color: white;
+    background: #fff;
+    color: #000;
     font-size: 16px;
     line-height: 28px;
-    padding: 90px 0;
+    padding: 20px 0;
     text-align: center;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
