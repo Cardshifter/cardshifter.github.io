@@ -525,7 +525,7 @@ input:focus::-webkit-input-placeholder {
 /* header --------------------------  */
 
 header {
-    padding: 104px 0;
+    padding: 34px 0;
     /*This was originally header.jpg*/
     /* background: url(../images/Andromeda_galaxy.jpg) no-repeat 50% 50%; */
     background: url(../images/wood-background.jpg) no-repeat 50% 50%;
@@ -585,7 +585,6 @@ header .buttons-wrapper .button-stripe {
 
 .header-img {
     float: right;
-    opacity: 0.85;
     padding-top: 100px;
 }
 
@@ -622,7 +621,7 @@ footer {
 
 .news {
     background: #fafafa;
-    padding: 103px 0 109px;
+    padding:33px 0 109px;
     text-align: center;
 }
 
@@ -672,7 +671,7 @@ footer {
 }
 
 .promo-column {
-    padding: 0 15px 60px;
+    padding: 0 15px 0px;
     float: left;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -692,12 +691,12 @@ footer {
 }
 
 .simple {
-    padding: 104px 0 89px
+    padding: 94px 0 29px
 }
 
 .simple-content {
     float: right;
-    padding-top: 37px;
+    padding-top: 20px;
     width: 420px;
 }
 
