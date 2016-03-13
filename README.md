@@ -2,15 +2,15 @@
 cardshifter.github.io
 =======
 
-######_Last revision: 2015-04-04_
+######_Last revision: 2016-03-10_
 
 ## Cardshifter Website
 
-This repository is closely tied to the [Cardshifter](https://github.com/Cardshifter/Cardshifter) repository. Cardshifter is an open-source online Trading Card Game (TCG) using Java 8 and related technologies.
+This repository is related to the [Cardshifter](https://github.com/Cardshifter/Cardshifter) repository. Cardshifter is an open-source online card game.
 
-The purpose of the website is to promote and inform about the project, and about its various modifications (mods). Please follow these guidelines if you wish to contribute.
+The purpose of the website is to promote and inform the public and potential players and contributors about the Cardshifter game and project, and about its various modifications (mods). 
 
-### Contributing
+## Contributing Guidelines
 
 If you wish to contribute, please take one of the following steps:
 
@@ -21,6 +21,21 @@ If you wish to contribute, please take one of the following steps:
 - Contact [@Phrancis](https://github.com/Phrancis) or [@marcandregirard](https://github.com/marcandregirard) via Github.
 
 - Join the [chatroom](http://chat.stackexchange.com/rooms/16134/tcg-creation) on Stack Exchange and discuss how you can contribute.
+
+Once you have committed changes to your fork or branch, create a pull request for the Cardshifter team to review, possibly recommending some changes if needed, and to merge to this repository for deployment.
+
+###Deploying website updates
+
+We have automated deployment of new website content on our Jenkins server, which is hosted and administered by [@Zomis](https://github.com/Zomis). To deploy:
+
+1) Commit your changes to your branch or fork;
+
+2) Create a pull request to merge to `master` branch on this repository;
+
+3) After review by the Cardshifter team (and possible changes if needed), the pull request will be merged to `master` by Cardshifter team;
+
+4) Deployment can take roughly up to an hour from pushing to `master`. Status updates will be posted by the Duga bot in our [chat room](http://chat.stackexchange.com/rooms/16134/cardshifter-tcg) on Stack Exchange. 
+
 
 ### Coding guidelines
 
@@ -55,38 +70,26 @@ The HTML and CSS source files are currently located in the following [sub-direct
 
 ##Guidelines for images
 
-
-
-Make sure to save images in the appropriate sub-folder. Do not save any images in the main `images/` folder. 
+Make sure to save images in the appropriate sub-folder. Do not save any images directly in the main `io.web/src/main/webapp/images/` folder. 
 
 ####Logos
 
-- Folder: `images/logos/`
+- Folder: `io.web/src/main/webapp/images/logos/`
 
 - Use for logos and similar branding images. 
 
-- These will normally be PNG files, or SVG for vectorial images in some cases.
+- These will normally be PNG files, and possibly SVG for vectorial images in some cases.
 
 - Use descriptive naming. For example, use `Twitter_logo_blue.png` rather than `Twitter.png`.
 
 ####Screenshots
 
-- Folder: `images/screenshots/`
+- Folder: `io.web/src/main/webapp/images/screenshots/`
 
 - Use for game and other screenshots of the applications. 
 
-- These will normally be PNG files, unless they contain significant photographic (rasterized) elements, in which case you may use JPG. Do not use SVG images for screenshots.
+- These will usually be PNG files, unless they contain significant photographic (rasterized) elements, in which case use JPG. 
 
 - Use versioned naming to represent which application version they come from. Be sure to update the `images.html` file in [WEB-INF](https://github.com/Cardshifter/cardshifter.github.io/tree/web-content/io.web/src/main/webapp/WEB-INF) so that the most current version is displayed on the site.
 
-- Example naming for release 0.4: `0.4-deck-builder.png`
-
-####Card pictures
-
-- Folder: `images/card-pictures/`
-
-- Use for images that are tied to playing cards in the Cardshifter game, to be displayed in a future card gallery.
-
-- These will normally be SVG vector images, as they will be drawn and colored by artist contributors. If an image contains mostly photographic/rasterized content, use JPG instead. 
-
-- Simply use the card name for naming purposes, e.g.: `heavy-mech.svg`
+- Example naming for release 0.6: `0.6-deck-builder.png`

@@ -11,8 +11,7 @@ public class StaticController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String index(Model model) {
-		model.addAttribute("view", "index");
-		return "template";
+		return "index";
 	}
 	
 	@RequestMapping(value = "/play-cardshifter",method = RequestMethod.GET)
@@ -24,6 +23,12 @@ public class StaticController {
 	@RequestMapping(value = "/news",method = RequestMethod.GET)
 	public String news(Model model) {
 		model.addAttribute("view", "news");
+		return "template";
+	}
+	
+	@RequestMapping(value = "/overview",method = RequestMethod.GET)
+	public String overview(Model model) {
+		model.addAttribute("view", "overview");
 		return "template";
 	}
 	

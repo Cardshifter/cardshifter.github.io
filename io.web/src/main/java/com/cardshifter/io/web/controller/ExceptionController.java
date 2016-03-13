@@ -2,30 +2,25 @@ package com.cardshifter.io.web.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
-import org.springframework.core.annotation.AnnotationUtils;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.boot.autoconfigure.web.ErrorController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.NoHandlerFoundException;
 
-@ControllerAdvice
-public class ExceptionController {
+@Controller
+public class ExceptionController implements ErrorController {
 
-	@ExceptionHandler(NoHandlerFoundException.class)
-	public ModelAndView handleError404(HttpServletRequest request, Exception e) {
-		ModelAndView mav = new ModelAndView("template");
-		mav.addObject("view", "404");
-		return mav;
-	}
+	private static final String PATH = "/error";
 
-	@ExceptionHandler(Exception.class)
-	public ModelAndView handleErrors(HttpServletRequest request, Exception e) throws Exception {
-		if (AnnotationUtils.findAnnotation(e.getClass(), ResponseStatus.class) != null) {
-			throw e;
-		}
+	@RequestMapping(value = PATH)
+	public ModelAndView error(HttpServletRequest request, Exception e) {
 		ModelAndView mav = new ModelAndView("template");
 		mav.addObject("view", "error");
 		return mav;
+	}
+
+	@Override
+	public String getErrorPath() {
+		return PATH;
 	}
 }
