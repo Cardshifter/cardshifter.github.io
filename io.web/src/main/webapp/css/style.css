@@ -934,14 +934,14 @@ footer {
 .discover-content {
     float: right;
     width: 50%;
-    padding: 77px 97px 50px 15px;
+    padding: 20px 70px 50px 5px;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
 .discover-content h2 {
-    font-size: 72px;
+    font-size: 48px;
     line-height: 72px;
     font-weight: bold;
     margin-bottom: 29px;
